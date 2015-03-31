@@ -1,0 +1,283 @@
+.Text {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : 12pt;
+	font-style : inherit;
+	font-variant : inherit;
+	font-weight : inherit;
+	text-align : justify;
+}
+
+.MenuHeading{
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight : bold;
+	font-style : normal;
+	font-variant : normal;
+	color : #33001A;
+	text-decoration : none;
+}
+
+
+TABLE.MenuHeading1 TH, TABLE.MenuHeading1 TH a {
+	background: #fecf49;
+	text-align: center;	
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight : bold;
+	font-style : normal;
+	font-variant : normal;
+	color : #993300;
+	text-decoration : none;
+}
+
+TABLE.MenuHeading1 TD, TABLE.MenuHeading1 TD a {
+	background: #F7F7F2;
+	text-align: left;	
+	font-family : sans-serif, Arial, Verdana, Helvetica;
+	font-size: 11px;
+	font-weight : normal;
+	font-style : normal;
+	font-variant : normal;
+	color : #8080c0;
+	text-decoration : none;
+	line-height : 16px;
+}
+TABLE.MenuHeading1 TR, TABLE.MenuHeading1 TD{
+	border: solid #fecf49 1px;
+}
+
+UL.MenuHeading1 LI{
+	list-style-image: url(../images/image002.gif);
+	vertical-align: 50%;
+	line-height: 15px;
+}
+
+.MenuHeading1{
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight : bold;
+	font-style : normal;
+	font-variant : normal;
+	color : #993300;
+	text-decoration : none;
+}
+TD.Header {
+	background: #F7F7F2;
+	border: solid #1184BB 1px;
+}
+
+
+.MenuItem{
+	font-family : sans-serif, Arial, Verdana, Helvetica;
+	font-size: 11px;	
+	font-weight : bold;
+	font-style : normal;
+	font-variant : normal;
+	color : #33001A;
+	text-decoration : none;
+	line-height : 16px;
+}
+
+
+.HeaderMenu{
+	font-family : sans-serif, Arial, Verdana, Helvetica;
+	font-size: 11px;	
+	font-weight : bold;
+	font-style : normal;
+	font-variant : normal;
+	color : #ffffff;
+	text-decoration : none;
+	line-height : 16px;
+}
+
+
+
+.link{
+	Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight : normal;
+	font-style : normal;
+	font-variant : normal;
+	color : #ffffff;
+	text-decoration : none;
+	line-height : 16px;
+}
+
+
+TABLE.MenuHeading_grey TH, TABLE.MenuHeading_grey TH a {
+	background: #B9B9B9;
+	text-align: center;	
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight : bold;
+	font-style : normal;
+	font-variant : normal;
+	color : #000000;
+	text-decoration : none;
+}
+
+TABLE.MenuHeading_grey TD, TABLE.MenuHeading_grey TD a {
+	background: #F7F7F7;
+	text-align: left;	
+	font-family : sans-serif, Arial, Verdana, Helvetica;
+	font-size: 14px;
+	font-weight : normal;
+	font-style : normal;
+	font-variant : normal;
+	color : #CC6600;
+	text-decoration : none;
+	line-height : 16px;
+}
+TABLE.MenuHeading_grey TR, TABLE.MenuHeading_grey TD{
+	border: solid #B9B9B9 1px;
+}
+
+TABLE.MenuHeading_grey TD.noborder{
+	border: none;
+}
+
+TABLE.MenuHeading_blue TH, TABLE.MenuHeading_blue TH a {
+	background: #B7DFF8;
+	text-align: center;	
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight : bold;
+	font-style : normal;
+	font-variant : normal;
+	color : #000000;
+	text-decoration : none;
+}
+
+TABLE.MenuHeading_blue TD, TABLE.MenuHeading_blue TD a {
+	background: #EBF1F7;
+	text-align: left;	
+	font-family : sans-serif, Arial, Verdana, Helvetica;
+	font-size: 12px;
+	font-weight : normal;
+	font-style : normal;
+	font-variant : normal;
+	color : #1184BB;
+	text-decoration : none;
+	line-height : 16px;
+}
+ TABLE.MenuHeading_blue TR, TABLE.MenuHeading_blue TD{
+	border: solid #B9B9B9 1px;
+}
+
+
+TABLE.MenuHeading_green TH, TABLE.MenuHeading_green TH a {
+	background: #91C888;	
+	font-family :sans-serif, Arial, Verdana, Helvetica;
+	font-size: 12px;	
+	font-weight : bold;
+	font-style : normal;
+	font-variant : normal;
+	color : #33001A;
+	text-decoration : none;
+	line-height : 16px;
+}
+
+TABLE.MenuHeading_green TD, TABLE.MenuHeading_green TD a {
+	background: #EEF7EA;	
+	font-family : sans-serif, Arial, Verdana, Helvetica;
+	font-size: 12px;	
+	font-weight : bold;
+	font-style : normal;
+	font-variant : normal;
+	color : #21990C;
+	text-decoration : none;
+	line-height : 16px;
+}
+TABLE.MenuHeading_green TR, TABLE.MenuHeading_green TD{
+	border: solid #B9B9B9 1px;
+}
+
+TABLE.MenuHeading_green TD.noborder{
+	border: none;
+}
+
+TABLE.MenuHeading_pink TD, TABLE.MenuHeading_pink TD a {
+	background: #EEF7EA;	
+	font-family : sans-serif, Arial, Verdana, Helvetica;
+	font-size: 12px;	
+	font-weight : bold;
+	font-style : normal;
+	font-variant : normal;
+	color : #CC66FF;
+	text-decoration : none;
+	line-height : 16px;
+}
+TABLE.MenuHeading_pink TR, TABLE.MenuHeading_pink TD{
+	border: solid #B9B9B9 1px;
+}
+
+TABLE.MenuHeading_pink TD.noborder{
+	border: none;
+}
+
+
+.Menu{
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight : bold;
+	font-style : normal;
+	font-variant : normal;
+	color : #66000;
+	text-decoration : none;
+	line-height : 18px;
+}
+
+
+.PageHeading{
+	font-family : Times New Roman, Verdana, Arial, Helvetica, sans-serif;
+	font-size : 22px;
+	font-weight : bold;
+	font-style : normal;
+	font-variant : normal;
+	color : #01A2A5;
+	text-decoration : none;
+}
+
+
+.Heading{
+	font-family : sans-serif, Arial, Helvetica;
+	font-size : 16px;
+	font-weight : bold;
+	font-style : normal;
+	font-variant : normal;
+	color : #01C6CB;
+	text-decoration : none;
+}
+
+
+.More{
+	font-family : Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	color : #993300;
+	text-decoration : none;
+}
+
+.Copyright{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: inherit;
+	font-style: normal;
+	font-variant: normal;
+	color: #444653;
+}
+
+.Counter{
+ 	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	font-weight:inherit;
+	font-style:normal;
+	font-variant:normal;
+	color:#FF33FF
+}
+
+a {
+text-decoration:none;
+}
+
+
+

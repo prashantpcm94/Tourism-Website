@@ -1,0 +1,31 @@
+{
+
+var google_ads = new Array();
+var google_ad;
+var google_radlinks = new Array();
+var google_radlink;
+var google_info = new Object();
+google_ad = {}; 
+google_ad.n = 1; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://googleads.g.doubleclick.net/aclk?sa=L&amp;ai=C9ldceYCiU4LpCZChuASql4HIDZiCpY4DsKC_xy7AjbcBEAEgl5WsE1D-q4LuBGDl0ueD_CnIAQGpArI4eTjW1lE-qAMBqgSCAU_Qpx_4Hm269cvJ6VQF6PeEkvRnx_ZVoCOaQWIVXk8gN4HZquuLN2_tqtJO3n6bk7psf6TR2M32rwbHgmTUZ5c8AUTAfEVnRoQFxZZ53hibnHIgfdlPYrvOukjSKJ351esvQ3CposRq9IN3iCJqrxCcbfunhMaaLJ6xinSpsappv7GAB5DJ8Ro&amp;num=1&amp;sig=AOD64_1drweXmnjeNZxuFaweh4ku_Caijw&amp;client=ca-ib_travel_sede_3&amp;adurl=http://www.hotel42amritsar.com"; 
+google_ad.visible_url = "www.hotel42amritsar.com"; 
+google_ad.log_info = "B6PaseYCiU4LpCZChuASql4HIDQCwoL_HLgAAEAE4AcgBAagTgAE";
+google_ad.activeview_js_immediate_enabled = "true";
+google_ad.line1 = "Hotel 42 Amritsar"; 
+google_ad.line2 = "Special Discount 20% (only Today)"; 
+google_ad.line3 = "Call Sahil 98722 92468, 98722 00050"; 
+google_ad.regionname = ""; 
+google_ads[0] = google_ad; 
+google_info.feedback_url = "https://www.google.com/url?ct\x3dabg\x26q\x3dhttps://www.google.com/adsense/support/bin/request.py%3Fcontact%3Dabg_afc%26url%3Dhttp://wikitravel.org/en/Amritsar%26gl%3DIN%26hl%3Den%26client%3Dca-ib_travel_sede_3%26hideleadgen%3D1%26ai0%3DC9ldceYCiU4LpCZChuASql4HIDZiCpY4DsKC_xy7AjbcBEAEgl5WsE1D-q4LuBGDl0ueD_CnIAQGpArI4eTjW1lE-qAMBqgSCAU_Qpx_4Hm269cvJ6VQF6PeEkvRnx_ZVoCOaQWIVXk8gN4HZquuLN2_tqtJO3n6bk7psf6TR2M32rwbHgmTUZ5c8AUTAfEVnRoQFxZZ53hibnHIgfdlPYrvOukjSKJ351esvQ3CposRq9IN3iCJqrxCcbfunhMaaLJ6xinSpsappv7GAB5DJ8Ro\x26usg\x3dAFQjCNEVlY-c_AyIBZaJmptLQsAgW_x17g";
+var google_attribution_text = "AdChoices";
+var google_is_rtl = false;
+if (window.google_ad_request_done) {
+google_ad_request_done(google_ads);
+}
+if (window.google_radlink_request_done) {
+google_radlink_request_done(google_radlinks);
+}
+}

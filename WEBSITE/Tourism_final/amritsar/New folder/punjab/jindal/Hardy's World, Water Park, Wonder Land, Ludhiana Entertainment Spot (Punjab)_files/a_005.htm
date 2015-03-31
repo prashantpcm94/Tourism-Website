@@ -1,0 +1,58 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<style type="text/css">
+body{
+	margin:0px 0px 0px 0px; background-color:#FFFFFF; color:#000000;
+}
+a:{
+	text-decoration:none;
+}
+a:hover{
+	text-decoration:underline;	
+}
+a, img{
+	margin:0px 0px 0px 0px; padding:0px 0px 0px 0px;
+}
+</style><script language="javascript">
+var preloaded = new Array();
+function preload_images() {
+    for (var i = 0; i < arguments.length; i++){
+        preloaded[i] = document.createElement('img');
+        preloaded[i].setAttribute('src',arguments[i]);
+    };
+};
+preload_images("50.jpg","36.jpg","23.gif","15.jpg");
+</script><script language="javascript" type="text/javascript"><!--//
+var adtime="10000";banners=new Array(); pageurl=new Array(); company=new Array(); ids=new Array();
+ids[0] = "50";
+banners[0] = "50.jpg";
+pageurl[0] = "http://www.karamchucks.ecatalogs.in/";
+company[0] = "Karam Chucks";
+ids[1] = "36";
+banners[1] = "36.jpg";
+pageurl[1] = "http://www.bombaycreations.ecatalogs.in/";
+company[1] = "Bombay Creations";
+ids[2] = "23";
+banners[2] = "23.gif";
+pageurl[2] = "http://www.manglafibre.bizcatalogs.in/";
+company[2] = "Mangla Fibre Glass Industries";
+ids[3] = "15";
+banners[3] = "15.jpg";
+pageurl[3] = "http://www.welldoneoptics.ecatalogs.in/";
+company[3] = "Well Done Optics";
+var adnumber=0; // alert(window.parent.location.href);
+//ref=document.location.href; ss=document.location.search.length; refupto=ref.length - ss;
+//refu=ref.substring(0,refupto);
+//alert(refu);
+var ref = '';//window.parent.location.href; //'ludhianadistrict.com'; //refu;
+function ibnshowad(){
+  if(adnumber>=banners.length)adnumber=0;
+  document.body.innerHTML ='<a href="showads.php?refe='+escape(ref)+'&adid='+ids[adnumber]+'&url='+pageurl[adnumber]+'" title="'+company[adnumber]+'" target="_blank"><img src="'+banners[adnumber]+'" border="0" alt="" /></a>';
+  adnumber++;
+}
+function ibnads_si(){a=setInterval("ibnshowad()",adtime);}
+//--></script></head>
+
+
+
+<body><a href="http://www.ecatalogs.in/embeddapi/adscripts/showads.php?refe=&amp;adid=23&amp;url=http://www.manglafibre.bizcatalogs.in/" title="Mangla Fibre Glass Industries" target="_blank"><img src="23.gif" alt="" border="0"></a></body></html>

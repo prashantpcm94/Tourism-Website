@@ -1,0 +1,20 @@
+.news_ticker
+{
+    font-family: Trebuchet MS, Arial, Verdana, Helvetica, sans-serif; 
+	font-size: 12px; 
+	color: #444444;
+	line-height: 18px;
+	text-align:left;
+}
+.alink{
+font-family:Trebuchet MS, Arial, Verdana, Helvetica, sans-serif;
+font-size:12px;
+color:#E6670C;
+text-decoration:none;
+}
+.alink:hover{
+font-family:Trebuchet MS, Arial, Verdana, Helvetica, sans-serif;
+font-size:12px;
+color:#E6670C;
+text-decoration:underline;
+}

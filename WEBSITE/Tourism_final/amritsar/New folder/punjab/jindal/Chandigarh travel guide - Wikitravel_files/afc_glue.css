@@ -1,0 +1,111 @@
+.radLinksAdBlock {
+	margin-top:70px;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:16px;
+}
+
+.radLinksAdBlock .radLinksResultsAdsByGoogle {
+	margin-left:5px;
+	background-color:#e5ecf9;
+	border-top:1px solid #36c;
+	font-weight:bold;
+	margin-bottom:10px;
+	text-decoration:underline;
+}
+
+.googleRadLinks {
+	padding:0;margin:0;
+	position:relative;
+	text-align:left;
+	white-space:normal !important;
+	font-family:Arial,Helvetica,sans-serif;
+	clear:both;
+	overflow:hidden;
+}
+
+.googleRadLinks .radLinksAdsByGoogle {
+	position:absolute;
+	top:0px;left:0px;
+	_top:-2px;
+	font-weight:bold;
+	font-size:9px; /* 11 */
+	z-index:2;
+}
+
+.googleVerticalRadLinks .radLinksAdsByGoogle {
+	top:auto;left:auto;
+	bottom:-1px;
+	right:0px;
+}
+
+.googleRadLinks .radList {
+	padding-left:90px;
+	float:left;
+	_position:relative;
+	_top:-2px;
+}
+
+.googleVerticalRadLinks .radList {
+	padding-left:0px;
+}
+
+.googleRadLinks .radList a {
+	text-decoration:underline;
+	display:block;
+	padding-right:10px;
+	font-weight:bold;
+	font-size:11px;
+	white-space:nowrap;
+	float:left;
+}
+
+.googleVerticalRadLinks .radList a {
+	padding-right:0px;
+	padding-top:0px;
+	padding-bottom:4px;
+	font-size:10px;
+	float:none;
+}
+
+
+.googleAdBlock .googleTextAd {
+	white-space:normal !important;
+}
+
+.googleAdBlock .googleTextAd a, .googleAdBlock .googleTextAd a span {
+	line-height:125%;
+}
+
+.googleAdBlock {
+}
+
+.adsByGoogle {
+}
+
+.radLinksAdBlock .adsByGoogle {
+	display:none;
+}
+
+.googleAdBlockVertical .adsByGoogle,
+.googleAdBlockSquareCompact .adsByGoogle,
+.googleAdBlockSquare .adsByGoogle {
+}
+
+.googleAdBlock .googleTextAd {
+}
+
+.googleAdBlock .googleTextAd .visibleUrl {
+}
+
+.googleAdBlockVertical .googleTextAd {
+	float:none;
+}
+	
+.googleAdBlockSquareCompact .googleTextAd {
+	float:none;
+}
+
+.googleAdBlockSquare .googleTextAd {
+	float:none;
+}
+

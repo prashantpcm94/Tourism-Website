@@ -1,0 +1,312 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>PUNJAB TOURISM</title>
+    
+    </head>
+<body>
+    <form id="form1" runat="server" style="background-color: #000000; height: 2060px; width:1330px;  margin-right: 53px;">
+    <div style="width: 1100px; height: 2050px; position:absolute;margin-left:115px; background-color: #FFFF99;">
+       <div style="position:absolute; width: 1100px; height: 45px; top:5px;font-family: 'Cooper Black'; font-size: 35px; font-weight: 300; font-style: normal; font-variant: small-caps; text-transform: none; color: #FFFF99; background-color: #663300;text-align: center;">
+            
+                PUNJAB TOURISM
+                <div style="position:absolute; left: 980px; width: 110px; font-size: 17px; height: 60px; top: 3px; font-family: Calibri;">
+                    <asp:ScriptManager ID="ScriptManager1" runat="server" OnLoad="Page_Load"></asp:ScriptManager>
+            <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                <ContentTemplate>
+                    <asp:Label ID="Label3" runat="server" ForeColor="#FFFF99"></asp:Label>
+                </ContentTemplate>
+                <Triggers> 
+                    <asp:AsyncPostBackTrigger ControlID="Timer1" EventName="Tick" />
+                </Triggers>
+            </asp:UpdatePanel>
+            <asp:Timer ID="Timer1" Interval="1000" runat="server"></asp:Timer>
+                </div>
+            </div>
+        <div style="position:absolute; top: 60px;  width: 1210px; height: 210px; left: -56px;">
+            <asp:UpdatePanel ID="UpdatePanel2" runat="server">
+                <ContentTemplate>
+                    <asp:Image ID="Image1" runat="server" Width="1210px" height="210px" BackColor="#FFFF99" ImageAlign="Middle" ImageUrl="~/PICS/Punjab Banner/1.jpg"/>
+                </ContentTemplate>
+                <Triggers> 
+                    <asp:AsyncPostBackTrigger ControlID="Timer2" EventName="Tick" />
+                </Triggers>
+            </asp:UpdatePanel>
+            <asp:Timer ID="Timer2" Interval="2000" runat="server" OnTick="Timer2_Tick1"></asp:Timer>
+        </div>
+        <div style="position:absolute; width:600px; height: 30px; top: 300px; left: 228px;">
+    <asp:Menu ID="Menu1" runat="server" OnMenuItemClick="Menu1_MenuItemClick" BackColor="#FFFBD6" BorderColor="#CCFF66" BorderStyle="Groove" BorderWidth="4px" DynamicVerticalOffset="15" Font-Names="Verdana" Font-Size="Medium" ForeColor="#663300" Height="36px" Orientation="Horizontal" RenderingMode="Table" StaticSubMenuIndent="10px" Width="600px">
+        <DynamicHoverStyle BackColor="#663300" ForeColor="#FFFF99" />
+        <DynamicSelectedStyle BackColor="#663300" ForeColor="#FFFFCC" />
+        <Items>
+            <asp:MenuItem Text="HOME" Value="HOME"></asp:MenuItem>
+            <asp:MenuItem Selectable="False" Text="CITIES" Value="CITIES">
+                <asp:MenuItem Text="JALANDHAR" Value="JALANDHAR"></asp:MenuItem>
+                <asp:MenuItem Text="CHANDIGARH" Value="CHANDIGARH"></asp:MenuItem>
+                <asp:MenuItem Text="AMRITSAR" Value="AMRITSAR"></asp:MenuItem>
+                <asp:MenuItem Text="LUDHIANA" Value="LUDHIANA"></asp:MenuItem>
+            </asp:MenuItem>
+            <asp:MenuItem Text="WHERE TO STAY" Value="HOTELS">
+                <asp:MenuItem Text="HOTELS" Value="HOTELS"></asp:MenuItem>
+            </asp:MenuItem>
+            <asp:MenuItem Text="TRAVEL" Value="TRAVEL">
+                <asp:MenuItem Text="AIR" Value="AIR"></asp:MenuItem>
+                <asp:MenuItem Text="BUS" Value="BUS"></asp:MenuItem>
+                <asp:MenuItem Text="TRAIN" Value="TRAIN"></asp:MenuItem>
+            </asp:MenuItem>
+            <asp:MenuItem Text="ABOUT US" Value="ABOUT US"></asp:MenuItem>
+        </Items>
+        <StaticHoverStyle BackColor="#663300" ForeColor="#FFFF99" />
+        <StaticSelectedStyle BackColor="#663300" ForeColor="#FFFFCC" />
+    </asp:Menu>
+        </div>
+        <div style="position:absolute; top: 299px; width: 200px; height: 1446px; left: 5px; text-align: center;">
+            <asp:Image ID="Image5" runat="server" ImageUrl="~/PICS/PUNJABLOGO.jpg" />
+            <div style="position:absolute; top: 3px; left: 850px; height: 32px; width: 216px;">
+                <!--<audio src="PICS/Sounds_Of_Punjab_-_www.mp3" autoplay="autoplay"></audio>--><asp:Label ID="Label4" runat="server" Font-Bold="True" Font-Size="X-Large" ForeColor="#663300" Text="Welcome " Visible="False"></asp:Label>
+                <asp:Label ID="Label14" runat="server" Font-Bold="True" Font-Size="X-Large" ForeColor="#663300" Text="Label" Visible="False"></asp:Label>
+                <br />
+           <div style="position:absolute; top: -287px; left: -958px;"> <asp:LinkButton ID="LinkButton12" runat="server" BackColor="#FFFBD6" BorderColor="#CCFF66" BorderStyle="Groove" Font-Underline="False" ForeColor="#663300" Height="24px" style="text-align: center" Width="80px" OnClick="LinkButton12_Click">Sound OFF</asp:LinkButton></div>
+            </div>
+            <br />
+            <br />
+            <asp:LinkButton ID="LinkButton10" runat="server" BackColor="#FFFBD6" BorderColor="#CCFF66" BorderStyle="Groove" Font-Underline="False" ForeColor="#663300" Height="24px" style="text-align: center" Width="80px" OnClick="LinkButton10_Click">LOG IN</asp:LinkButton>
+            <br />
+            <asp:LinkButton ID="LinkButton11" runat="server" ForeColor="#663300" OnClick="LinkButton11_Click">(or Sign Up)</asp:LinkButton>
+            <br />
+            <br />
+            <asp:LinkButton ID="LinkButton4" runat="server" BackColor="#FFFBD6" BorderColor="#CCFF66" BorderStyle="Groove" Font-Underline="False" ForeColor="#663300" Height="24px" style="text-align: center" Width="160px" OnClick="LinkButton4_Click">PHOTO GALLERY</asp:LinkButton>
+            <br />
+            <br />
+            <asp:TreeView ID="TreeView1" runat="server" Font-Size="Medium" Height="520px" style="text-align: center" BackColor="#663300" BorderStyle="Groove" ForeColor="#FFFF99" OnSelectedNodeChanged="TreeView1_SelectedNodeChanged" Width="200px" ImageSet="Arrows">
+                <HoverNodeStyle Font-Underline="True" ForeColor="#5555DD" />
+                <LeafNodeStyle VerticalPadding="2px" />
+                <Nodes>
+                    <asp:TreeNode Text="BOOK YOUR STAY" Value="HOTELS">
+                        <asp:TreeNode Text="HOTELS" Value="HOTELS"></asp:TreeNode>
+                    </asp:TreeNode>
+                    <asp:TreeNode Text="BOOK YOUR TRAVEL" Value="BOOK YOUR TRAVEL" SelectAction="None">
+                        <asp:TreeNode Text="AIR" Value="AIR"></asp:TreeNode>
+                        <asp:TreeNode Text="BUS" Value="BUS"></asp:TreeNode>
+                        <asp:TreeNode Text="TRAIN" Value="TRAIN"></asp:TreeNode>
+                    </asp:TreeNode>
+                    <asp:TreeNode Text="WEATHER" Value="WEATHER"></asp:TreeNode>
+                    <asp:TreeNode Text="VIEW IN GMAPS" Value="GMAPS"></asp:TreeNode>
+                    <asp:TreeNode Text="REVIEWS" Value="REVIEWS">
+                    </asp:TreeNode>
+                    <asp:TreeNode Text="FOLLOW US" Value="FOLLOW US" SelectAction="None">
+                        <asp:TreeNode Text="FACEBOOK" Value="FACEBOOK"></asp:TreeNode>
+                        <asp:TreeNode Text="TWITTER" Value="TWITTER"></asp:TreeNode>
+                    </asp:TreeNode>
+                    <asp:TreeNode Text="ABOUT US" Value="ABOUT US"></asp:TreeNode>
+                    <asp:TreeNode Text="RELATED LINKS" Value="RELATED LINKS" SelectAction="None">
+                        <asp:TreeNode Text="incredibleindia.com" Value="incredibleindia.com"></asp:TreeNode>
+                        <asp:TreeNode Text="punjabtourism.com" Value="punjabtourism.com"></asp:TreeNode>
+                    </asp:TreeNode>
+                </Nodes>
+                <NodeStyle ChildNodesPadding="5px" Font-Names="Tahoma" Font-Size="11pt" ForeColor="#FFFF99" HorizontalPadding="5px" NodeSpacing="0px" VerticalPadding="10px" />
+                <ParentNodeStyle Font-Bold="False" />
+                <RootNodeStyle VerticalPadding="5px" />
+                <SelectedNodeStyle Font-Underline="True" ForeColor="#5555DD" HorizontalPadding="0px" VerticalPadding="0px" />
+            </asp:TreeView>
+            <div style="position:absolute; height: 109px; width: 163px; text-align: center; color: #663300; top: 808px; left: 18px;">
+            <asp:LinkButton ID="LinkButton3" runat="server" ForeColor="#663300">Subscribe For Newsletter</asp:LinkButton>
+                <br />
+                Email-id<br />
+                <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                <br />
+                <br />
+            <asp:Button ID="Button2" runat="server" Text="Subscribe" BackColor="#FFFBD6" BorderColor="#CCFF66" BorderStyle="Groove" Height="23px" Width="71px" OnClick="Button2_Click" />
+                <br />
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <asp:Image ID="Image4" runat="server" ImageUrl="~/PICS/INDIALOGO.jpg" />
+            <br />
+            <br />
+            <br />
+            <asp:Image ID="Image6" runat="server" Height="28px" ImageUrl="~/PICS/india_gov.jpg" Width="179px" />
+            <br />
+            <br />
+            <br />
+            <asp:Image ID="Image7" runat="server" Height="33px" ImageUrl="~/PICS/PUNJABGOVLOGO.jpg" Width="163px" />
+            <br />
+            <br />
+            <br />
+            <asp:Image ID="Image8" runat="server" Height="35px" ImageUrl="~/PICS/Ad/logo.png" Width="181px" />
+            <br />
+            <br />
+            <br />
+            <asp:UpdatePanel ID="UpdatePanel3" runat="server">
+                <ContentTemplate>
+                    <asp:Image ID="Image9" runat="server" Height="177px" ImageUrl="~/PICS/Ad/a5khhrinnp159586c0dkih7q004f.png" Width="190px" />
+                </ContentTemplate>
+                <Triggers> 
+                    <asp:AsyncPostBackTrigger ControlID="Timer2" EventName="Tick" />
+                </Triggers>
+            </asp:UpdatePanel>
+        </div>        
+        <div style="position:absolute; width:870px; height: 1386px; top: 364px; left: 214px;">
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server" >
+                SOUND
+                <br />
+                SOUND BUTTON IN VIDEOCLIP
+                <br />
+                TRAVEL IN MENU<br />
+                <br />
+                <br />
+                <br />
+                ABOUT US<br/>
+            
+                BOOKING<br/>
+            
+                WEATHER TOOLTIPS<br/>
+            
+                SEARCH BOX //LOGIC<br/>
+            
+                SITE&nbsp; MAP PATH<br/>
+            
+                REVIEWS and
+                FEEDBACK<br/>
+            
+                GOOGLE MAPS//LOGIC<br/>
+            
+                RELATED LINKS<br/>
+            
+                PHOTO GALARY//LOGIC<br/>
+            
+                FOLLOW ON TWITTER FACEBOOK<br/>
+           
+                WHAT&#39;S NEW<br/>
+            
+                TEXT SIZE//LOGIC<br />
+                LOGIN<br />
+                <br />
+                <br/>
+            
+                ok
+                <br />
+            
+                TOURISM.GOV.IN<br />
+            
+                TIME//LOGIC<br />
+            
+                VISITOR NO//LOGIC<br />
+            
+                REGISTER FOR NEWSLETTER//LOGIC<br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                sound in sess\ion
+                <br />
+                video<br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br/>
+            </asp:ContentPlaceHolder>
+            <br />
+        </div>
+        <div style="position:absolute; width: 1210px; height: 185px; top: 1817px; left: -57px; background-color: #663300; color: #FFFF99; text-align: center;">
+
+            <marquee id="m1" behaviour="scroll" direction="left" width="500px">NEWS:PM Modi to visit Chandigarh</marquee><br />
+            <br />
+            <asp:Label ID="Label1" runat="server" ForeColor="#FFFF99" Text="Visitor No:"></asp:Label>
+&nbsp;<asp:Label ID="Label2" runat="server" ForeColor="#FFFF99"></asp:Label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div style="width: 575px; position:absolute; top: 36px; left: 201px; height: 110px;">
+                <asp:Image ID="Image3" runat="server" Height="110px" Width="575px" ImageUrl="~/PICS/Ad/5faf2b6072227fdcab1e1655bc9eaa40.jpg" />
+            </div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Label ID="Label15" runat="server" ForeColor="#FFFF99" Text="Related Links" Font-Underline="True"></asp:Label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;| <asp:LinkButton ID="LinkButton1" runat="server" ForeColor="#FFFF99" OnClick="LinkButton1_Click">Site Map</asp:LinkButton>
+            &nbsp;| 
+            <asp:Label ID="Label16" runat="server" ForeColor="#FFFF99" Text="Follow Us" Font-Underline="True"></asp:Label>
+            &nbsp;| <a href="javascript:__doPostBack('ctl00$LinkButton5','')" style="color: #FFFF99">
+            <asp:LinkButton ID="LinkButton8" runat="server" ForeColor="#FFFF99" OnClick="LinkButton8_Click">Feedback</asp:LinkButton>
+            </a><br />
+            <br />
+            <div style="position:absolute; top: 74px; left: 787px; width: 157px; height: 44px; ">
+                <asp:HyperLink ID="HyperLink1" runat="server"  ><a href="http://www.incredibleindia.com" style ="color: #ffff99" target="_blank">www.incredibleindia.com</a></asp:HyperLink>
+                <br />
+                <asp:HyperLink ID="HyperLink2" runat="server" ><a href="http://www.punjabtourism.com" style ="color: #ffff99" target="_blank">punjabtourism.com</a></asp:HyperLink>
+            </div>
+            <div style="position:absolute; top: 77px; left: 1011px; height: 46px; width: 103px; text-align: center;">
+                <asp:Image ID="Image10" runat="server" Height="16px" ImageUrl="~/PICS/ICONS/facebook_icon_30x30.png" style="margin-left: 1px" Width="16px" />
+                <asp:LinkButton ID="LinkButton5" runat="server" ForeColor="#FFFF99" style="text-align: center" OnClick="LinkButton5_Click">Facebook</asp:LinkButton>
+                <br />
+                <asp:Image ID="Image11" runat="server" Height="16px" ImageUrl="~/PICS/ICONS/Twitter_icon_40x40.png" style="margin-top: 2px" Width="16px" />
+                <asp:LinkButton ID="LinkButton6" runat="server" ForeColor="#FFFF99" style="text-align: center" OnClick="LinkButton6_Click">Twitter</asp:LinkButton>
+            </div>
+            
+            
+            <br />
+            <br />
+            <br />
+            
+            
+            <br />
+            
+            
+            ALL COPYRIGHTS RESERVED : @ 
+            LASHKER &#39;E&#39; TRISHUL 1994&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; Contact Us : 9780709688,9463818624,9592014534,9872661660</div>
+        </div>
+        
+    </form>
+</body>
+</html>

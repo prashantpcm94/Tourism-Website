@@ -1,0 +1,1569 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0049)http://www.punjabtourism.gov.in/Destinations.aspx -->
+<html xmlns="http://www.w3.org/1999/xhtml" style="height: 100%;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>PunjabTourism : Destination</title>
+    <link href="./PunjabTourism   Destination_files/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" async="" src="./PunjabTourism   Destination_files/ga.js"></script><script type="text/javascript" src="./PunjabTourism   Destination_files/jquery-1.7.1.min.js"></script>
+    
+    <script type="text/javascript" src="./PunjabTourism   Destination_files/jquery.maphilight.min.js"></script>
+    <style type="text/css">
+        div#container1
+        {
+            width: 580px;
+            margin: 100px auto 0 auto;
+            padding: 20px;
+            background: #000;
+            border: 1px solid #1a1a1a;
+        }
+        
+        /* HOVER STYLES */
+        div#pop-up
+        {
+            display: none;
+            position: absolute;
+            width: 180px;
+            padding: 10px;
+            background: #eeeeee;
+            color: #000000;
+            border: 1px solid #1a1a1a;
+            font-size: 90%;
+            float: left;
+        }
+    </style>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $("#DestinationsTab").addClass('active');
+            Banner_DisplayHeaderImage('Destinations'); //#A VA:091012 - Display MenuHeaderImages
+            //# C Amrit:122112 - Overview and District Menus not required
+            //GetMenuBar("MenuBarID", "DESTINATIONS", "DESTINATIONS");
+            GetMenuBar("MenuBarID", "ABOUT PUNJAB", "ABOUT PUNJAB");
+
+            $('.map').maphilight(
+                {
+
+                    fill: true,
+                    fillColor: '044572',
+                    fillOpacity: 0.4,
+                    stroke: true,
+                    strokeColor: '044572',
+                    strokeOpacity: 1,
+                    strokeWidth: 1,
+                    fade: true,
+                    alwaysOn: false,
+                    neverOn: false,
+                    groupBy: false,
+                    wrapClass: true,
+                    shadow: false,
+                    shadowX: 0,
+                    shadowY: 0,
+                    shadowRadius: 6,
+                    shadowColor: '000000',
+                    shadowOpacity: 0.8,
+                    shadowPosition: 'outside',
+                    shadowFrom: false
+                });
+
+            var moveLeft = 20;
+            var moveDown = 10;
+            var varPreviousVal = "";
+
+            $('area').hover(function (e) {
+                try {
+                    // alert(e.srcElement);
+                    $("#h3_CityName").html(e.srcElement.id);
+                    // alert("3");
+                } catch (e) {
+
+                }
+
+                if (e.srcElement.id != varPreviousVal) {
+
+                    $.post("UserControls/Ajax/AjaxDistrictDetail.aspx",
+                { Mode: "GetPopUpDetails", CityName: e.srcElement.id },
+                    function (VarResponseData) {
+                        if (VarResponseData != "") {
+
+                            var varArr = VarResponseData.split('###');
+
+                            $("#Img_Amr").attr("src", varArr[0]);
+                            $('#h3_Text_Amr').empty();
+                            $('#h3_Text_Amr').append(varArr[1]);
+
+                            $('div#pop-up').show();
+
+                            varPreviousVal = e.srcElement.id;
+                        } //END OF if (VarResponseData
+                    }); //END OF function (VarResponse...
+
+                }
+                else {
+                    $('div#pop-up').show();
+                }
+                //.css('top', e.pageY + moveDown)
+                //.css('left', e.pageX + moveLeft)
+                //.appendTo('body');
+            }, function () {
+                // alert('here');
+                $('div#pop-up').hide();
+            });
+
+            $('area').mousemove(function (e) {
+                $("div#pop-up").css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
+            });
+        });
+
+        function onDistrictchange() {
+
+            if ($('#cmbDistrict').val() == "1") {
+                $('#bathindaDiv').fadeOut('slow', function () { $('#amritsarDiv').fadeIn(); });
+            }
+            if ($('#cmbDistrict').val() == "3") {
+                $('#amritsarDiv').fadeOut('slow', function () { $('#bathindaDiv').fadeIn(); });
+            }
+            //            else {
+            //                $('#barbequeDiv').fadeOut('slow', function () { $('#dhabaDiv').fadeIn(); });
+            //            }
+
+            return false;
+        }       
+
+    </script>
+    <style type="text/css">
+        .Destination_Map_MiddleDiv
+        {
+            width: 732px;
+            padding: 0px;
+            margin: 0px;
+            float: left;
+        }
+    </style>
+<link type="text/css" rel="stylesheet" charset="UTF-8" href="./PunjabTourism   Destination_files/translateelement.css"><script type="text/javascript" charset="UTF-8" src="./PunjabTourism   Destination_files/main.js"></script><script type="text/javascript" charset="UTF-8" src="./PunjabTourism   Destination_files/element_main.js"></script></head>
+<body style="position: relative; min-height: 100%; top: 0px;">
+    <!--Start Container -->
+    <div id="container">
+        <!--Start Wrapper-->
+        <div id="Wrapper">
+            <!--Start headerwrapper-->
+            <div id="headerwrapper">
+                <!--Start logoDiv-->
+                <div class="logoDiv">
+                    <a href="http://www.punjabtourism.gov.in/">
+                        <img src="./PunjabTourism   Destination_files/logo.jpg" alt="" width="172" height="123" border="0"></a></div>
+                <!--End logoDiv -->
+                <!--Start HeaderRightDiv-->
+                <div class="HeaderRightDiv">
+                    <!--Start LoginSignUpDiv-->
+                    <div class="LoginSignUpDiv">
+                        <span style="padding: 0px 0px 0px 10px; margin: 0px; float: right">
+                            
+<script src="./PunjabTourism   Destination_files/element.js"></script>
+<div id="google_translate_element" style="float: right; margin-top: 5px; text-align: right;">
+<div class="skiptranslate goog-te-gadget" dir="ltr"><div id=":0.targetLanguage"><select class="goog-te-combo"><option value="">Select Language</option><option value="af">Afrikaans</option><option value="sq">Albanian</option><option value="ar">Arabic</option><option value="hy">Armenian</option><option value="az">Azerbaijani</option><option value="eu">Basque</option><option value="be">Belarusian</option><option value="bn">Bengali</option><option value="bs">Bosnian</option><option value="bg">Bulgarian</option><option value="ca">Catalan</option><option value="ceb">Cebuano</option><option value="zh-CN">Chinese (Simplified)</option><option value="zh-TW">Chinese (Traditional)</option><option value="hr">Croatian</option><option value="cs">Czech</option><option value="da">Danish</option><option value="nl">Dutch</option><option value="eo">Esperanto</option><option value="et">Estonian</option><option value="tl">Filipino</option><option value="fi">Finnish</option><option value="fr">French</option><option value="gl">Galician</option><option value="ka">Georgian</option><option value="de">German</option><option value="el">Greek</option><option value="gu">Gujarati</option><option value="ht">Haitian Creole</option><option value="ha">Hausa</option><option value="iw">Hebrew</option><option value="hi">Hindi</option><option value="hmn">Hmong</option><option value="hu">Hungarian</option><option value="is">Icelandic</option><option value="ig">Igbo</option><option value="id">Indonesian</option><option value="ga">Irish</option><option value="it">Italian</option><option value="ja">Japanese</option><option value="jw">Javanese</option><option value="kn">Kannada</option><option value="km">Khmer</option><option value="ko">Korean</option><option value="lo">Lao</option><option value="la">Latin</option><option value="lv">Latvian</option><option value="lt">Lithuanian</option><option value="mk">Macedonian</option><option value="ms">Malay</option><option value="mt">Maltese</option><option value="mi">Maori</option><option value="mr">Marathi</option><option value="mn">Mongolian</option><option value="ne">Nepali</option><option value="no">Norwegian</option><option value="fa">Persian</option><option value="pl">Polish</option><option value="pt">Portuguese</option><option value="pa">Punjabi</option><option value="ro">Romanian</option><option value="ru">Russian</option><option value="sr">Serbian</option><option value="sk">Slovak</option><option value="sl">Slovenian</option><option value="so">Somali</option><option value="es">Spanish</option><option value="sw">Swahili</option><option value="sv">Swedish</option><option value="ta">Tamil</option><option value="te">Telugu</option><option value="th">Thai</option><option value="tr">Turkish</option><option value="uk">Ukrainian</option><option value="ur">Urdu</option><option value="vi">Vietnamese</option><option value="cy">Welsh</option><option value="yi">Yiddish</option><option value="yo">Yoruba</option><option value="zu">Zulu</option></select></div>Powered by <span style="white-space:nowrap"><a class="goog-logo-link" href="https://translate.google.com/" target="_blank"><img src="./PunjabTourism   Destination_files/google_logo_41.png" width="37px" height="13px" style="padding-right: 3px">Translate</a></span></div></div>
+<div style="float: right; margin-top: 10px; width: 330px; text-align: right;" id="divHeaderLinks"><a style="font-family:Lato-Regular; font-size:13px;" href="http://www.punjabtourism.gov.in/WhatsNew.aspx" id="New_HeaderLink"><object height="18" style="vertical-align: text-bottom;" data="http://www.punjabtourism.gov.in/Images/Invitation/new_animated.gif"></object></a> | <a style="font-family:Lato-Regular;font-size:13px;" href="http://punjabtourism.gov.in/Blogsite/" id="Blog_HeaderLink" target="_blank">Blog</a> | <a style="font-family:Lato-Regular;font-size:13px;" href="http://www.punjabtourism.gov.in/TradeUs.aspx" id="TradeUs_HeaderLink">Trade</a> | <a style="font-family:Lato-Regular;font-size:13px;" href="http://www.punjabtourism.gov.in/Media.aspx" id="Media_HeaderLink">Media</a> | <a style="font-family:Lato-Regular;font-size:13px;" href="http://bhuvan-noeda.nrsc.gov.in/projects/tourism/tourism.php" id="GIS_HeaderLink">GIS </a> | <a style="font-family:Lato-Regular;font-size:13px;" href="http://www.punjabtourism.gov.in/TripPlanner.aspx" id="TripPlanner_HeaderLink">Trip Planner</a> | <a style="font-family:Lato-Regular;font-size:13px;" href="http://www.punjabtourism.gov.in/Sitemap.aspx" id="TripPlanner_HeaderLink"> Site Map</a></div>
+<script type="text/javascript">   
+
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en'
+        }, 'google_translate_element');
+    }
+
+    $(function () {
+
+        var varCurrentWebsite = "TRAVEL";
+
+        if (varCurrentWebsite != "") {
+
+            var varHTMLContent_HeaderLinks = "";
+            $("#divHeaderLinks").empty();
+
+            if (varCurrentWebsite.toUpperCase() == "TRAVEL") {
+
+                varHTMLContent_HeaderLinks = "<a style='font-family:Lato-Regular; font-size:13px;' href='WhatsNew.aspx' id='New_HeaderLink'><object height='18' style='vertical-align: text-bottom;' data='Images/Invitation/new_animated.gif'></object></a> | <a style='font-family:Lato-Regular;font-size:13px;' href='http://punjabtourism.gov.in/Blogsite/' id='Blog_HeaderLink' target='_blank' >Blog</a> | <a style='font-family:Lato-Regular;font-size:13px;' href='TradeUs.aspx' id='TradeUs_HeaderLink'>Trade</a> | <a style='font-family:Lato-Regular;font-size:13px;' href='Media.aspx' id='Media_HeaderLink'>Media</a> | <a style='font-family:Lato-Regular;font-size:13px;' href='http://bhuvan-noeda.nrsc.gov.in/projects/tourism/tourism.php' id='GIS_HeaderLink'>GIS </a> | <a style='font-family:Lato-Regular;font-size:13px;' href='TripPlanner.aspx' id='TripPlanner_HeaderLink'>Trip Planner</a> | <a style='font-family:Lato-Regular;font-size:13px;' href='Sitemap.aspx' id='TripPlanner_HeaderLink'> Site Map</a>";
+                document.getElementById("divHeaderLinks").innerHTML = varHTMLContent_HeaderLinks;
+            }
+            else if (varCurrentWebsite.toUpperCase() == "MEDIA") {
+
+                varHTMLContent_HeaderLinks = "<a style='font-family:Lato-Regular; font-size:13px;' href='WhatsNew.aspx' id='New_HeaderLink'><object height='18' style='vertical-align: text-bottom;' data='Images/Invitation/new_animated.gif'></object></a> | <a style='font-family:Lato-Regular;font-size:13px;' href='http://punjabtourism.gov.in/Blogsite/' id='Blog_HeaderLink' target='_blank' >Blog</a> | <a style='font-family:Lato-Regular;font-size:13px;' href='HomePage.aspx' id='HomePage_HeaderLink'>Travel</a> | <a style='font-family:Lato-Regular;font-size:13px;' href='TradeUs.aspx' id='TradeUs_HeaderLink'>Trade</a> | <a style='font-family:Lato-Regular;font-size:13px;' href='http://bhuvan-noeda.nrsc.gov.in/projects/tourism/tourism.php' id='GIS_HeaderLink'>GIS</a> | <a style='font-family:Lato-Regular;font-size:13px;' href='Sitemap.aspx' id='TripPlanner_HeaderLink'> Site Map</a>";
+                document.getElementById("divHeaderLinks").innerHTML = varHTMLContent_HeaderLinks;
+            }
+            else if (varCurrentWebsite.toUpperCase() == "TRADE") {
+
+                varHTMLContent_HeaderLinks = "<a style='font-family:Lato-Regular; font-size:13px;' href='WhatsNew.aspx' id='New_HeaderLink'><object height='18' style='vertical-align: text-bottom;' data='Images/Invitation/new_animated.gif'></object></a> | <a style='font-family:Lato-Regular;font-size:13px;' href='http://punjabtourism.gov.in/Blogsite/' id='Blog_HeaderLink' target='_blank' >Blog</a> |<a style='font-family:Lato-Regular;font-size:13px;' href='HomePage.aspx' id='HomePage_HeaderLink'>Travel</a> | <a style='font-family:Lato-Regular;font-size:13px;' href='Media.aspx' id='Media_HeaderLink'>Media</a> | <a style='font-family:Lato-Regular;font-size:13px;' href='http://bhuvan-noeda.nrsc.gov.in/projects/tourism/tourism.php' id='GIS_HeaderLink'>GIS</a> | <a style='font-family:Lato-Regular;font-size:13px;' href='Sitemap.aspx' id='TripPlanner_HeaderLink'> Site Map</a>";
+                document.getElementById("divHeaderLinks").innerHTML = varHTMLContent_HeaderLinks;
+            }
+
+            startBlink();
+
+
+        }
+    });
+
+    function blink() {
+        var blink = document.all.tags("blink")
+        for (var i = 0; i < blink.length; i++)
+            blink[i].style.visibility = blink[i].style.visibility == "" ? "hidden" : ""
+    }
+
+    function startBlink() {
+        if (document.all)
+            setInterval("blink()", 500)
+    }
+
+</script>
+
+                        </span>
+                    </div>
+                    <!--End LoginSignUpDiv-->
+                    <!--Start search_tab_div-->
+                    <div class="search_tab_div">
+                    </div>
+                    <!--End search_tab_div -->
+                </div>
+                <!--End HeaderRightDiv-->
+            </div>
+            <!--End headerwrapper-->
+            <!--Start MenuBar_div -->
+            <div id="MenuBar_div">
+                <!--Start menu_Center_div -->
+                <div class="menu_Center_div">
+                     
+<ul>
+    <li><a href="http://www.punjabtourism.gov.in/HomePage.aspx" id="HomeTab">Home</a></li>
+    <li><a href="http://www.punjabtourism.gov.in/AboutPunjab.aspx" id="AboutPunjabTab">About Punjab</a></li>
+    <li><a href="./PunjabTourism   Destination_files/PunjabTourism   Destination.htm" id="DestinationsTab" class="active">Destinations</a></li>
+    
+    <!--<li><a href="Discoveries.aspx">My Discoveries</a></li>-->
+    <li><a href="http://www.punjabtourism.gov.in/MyCuisine.aspx" id="MyCuisineTab">Cuisine</a></li>
+    <li><a href="http://www.punjabtourism.gov.in/Events.aspx" id="EventsTab">Events</a></li>
+    <li><a href="http://www.punjabtourism.gov.in/ContactUs.aspx" id="ContactUsTab">Contact Us</a></li>
+</ul>
+<script language="JavaScript">
+<!--
+
+    //Disable right mouse click Script
+    //By Maximus (maximus@nsimail.com) w/ mods by DynamicDrive
+    //For full source code, visit http://www.dynamicdrive.com
+
+    var message = "";
+
+    ///////////////////////////////////
+    function clickIE4() {
+        if (event.button == 2) {
+           // alert(message);
+            return false;
+        }
+    }
+
+    function clickNS4(e) {
+        if (document.layers || document.getElementById && !document.all) {
+            if (e.which == 2 || e.which == 3) {
+              //  alert(message);
+                return false;
+            }
+        }
+    }
+
+    if (document.layers) {
+        document.captureEvents(Event.MOUSEDOWN);
+        document.onmousedown = clickNS4;
+    }
+    else if (document.all && !document.getElementById) {
+        document.onmousedown = clickIE4;
+    }
+
+    document.oncontextmenu = new Function("return false")
+
+// --> 
+</script>
+
+                </div>
+                <!--End menu_Center_div -->
+            </div>
+            <!--End MenuBar_div -->
+            <!--Start MenuBottom_Bar -->
+            <div class="MenuBottom_Bar">
+            </div>
+            <!--End MenuBottom_Bar -->
+        </div>
+        <!--End Wrapper -->
+        <!--Start_Body_Wrapper -->
+        <div class="Body_Wrapper">
+            <div class="banner_rightPannel">
+            </div>
+            <!--End banner_rightPannel-->
+            <!--Start bodyContent_div -->
+            <div class="bodyContent_div">
+                <!--Start aboutPunajb_LeftPannel-->
+                <div class="aboutPunajb_LeftPannel">
+                    
+<div class="Left_Navigation">
+    <ul id="MenuBarID">
+    </ul>
+    
+</div>
+
+<div id="div_SubMenubar" style="margin-top:20px;">
+ <ul id="SubMenubar">
+    </ul>
+</div>
+
+<script type="text/javascript">
+
+    var mvarMenuTab = "";
+    var mvarMenuname = "";
+    //nt
+    $(function () {
+        mvarMenuTab = "DESTINATIONS";
+
+        // GetMenuBar();
+
+//        $.post("UserControls/Ajax/AjaxGallery.aspx",
+//            {
+//                Mode: "GETRANDOMVIDEO"
+//            },
+//            function (VarResponseData) {
+
+//                if (VarResponseData.toUpperCase() != "FAILURE") {
+//                    document.getElementById("frmVideoUrl").src = VarResponseData;
+//                    document.getElementById("divRandomVideos").style.display = "block";
+//                }
+//            } //end of varresponse
+//         ); //end of Ajax call
+
+        return false;
+
+    });
+
+    function GetMenuBar(divID, mvarMenuname, mvarMenuTab) {
+
+        $.post("UserControls/Ajax/MenuBarAjax.aspx",
+            {
+                Mode: "GETMENUBAR",
+                MenuTab: mvarMenuTab,
+                Menuname: mvarMenuname
+            },
+            function (VarResponseData) {
+                if (divID == "SubMenubar") {
+                    $("#div_SubMenubar").addClass("Left_Navigation");
+                }
+                document.getElementById(divID).innerHTML = VarResponseData;
+            } //end of varresponse
+         );        //end of Ajax call
+
+        return false;
+    }
+
+    function menubarhtmlshow(submenuid) {
+        //end of Ajax call
+
+        GetMiddlehtml(submenuid)
+        return false;
+    }
+
+    function GetMiddlehtml(id) {
+
+        $.post("UserControls/Ajax/MenuBarAjax.aspx",
+            {
+                Mode: "GETHTMLDETAILS",
+                SubMenuHtmlID: id
+            },
+            function (VarResponseData) {
+
+                document.getElementById("Middleid").innerHTML = VarResponseData;
+            } //end of varresponse
+         );      //end of Ajax call
+
+        return false;
+    }
+
+    function menubarhtmlshowfast(fasttimemenutabname) {
+        $.post("UserControls/Ajax/MenuBarAjax.aspx",
+            {
+                Mode: "GETHTMLFASTTIMEDETAILS",
+                TabName: fasttimemenutabname
+            },
+            function (VarResponseData) {
+                document.getElementById("Middleid").innerHTML = VarResponseData;
+            } //end of varresponse
+         );     //end of Ajax call
+
+        return false;
+    }
+
+    function GetMiddlehtml1(id, home) {
+
+        window.location = "Common.aspx";
+
+        return false;
+    }
+
+       
+</script>
+
+                    <!--End black_strip_div-->
+                    <!--Start usercontrol Travel-->
+                    
+<!--Start SmallBox_OuterDiv-->
+<div class="Travel_navigation" id="Travel_navigation">
+    <!--Start SmallBox_InnerDiv-->
+    <div class="SmallBox_InnerDiv" id="travel_map_div">
+        <!--Start SmallBox_TopCurveDiv-->
+        <div class="SmallBox_TopCurveDiv">
+        </div>
+        <!--End SmallBox_TopCurveDiv-->
+        <!--Start SmallBox_MiddleDiv-->
+        <div class="SmallBox_MiddleDiv">
+            
+            <p>
+                <img id="img_travel" src="./PunjabTourism   Destination_files/TravelMap_icon.png" width="35" onclick="Redirection(&#39;Guide.aspx&#39;);" style="cursor: pointer;" height="35" alt=""></p>
+            <h5>
+                <a id="a_travel" href="http://www.punjabtourism.gov.in/Guide.aspx" style="">Guides</a></h5>
+        </div>
+        <!--End SmallBox_MiddleDiv-->
+        <!--Start SmallBox_BottomDiv-->
+        <div class="SmallBox_BottomDiv">
+        </div>
+        <!--Start SmallBox_BottomDiv-->
+    </div>
+    <!--End SmallBox_InnerDiv-->
+    <!--Start --->
+    <div class="SmallBox_InnerDiv" id="Travel_Tips_div" style="margin-left: 23px;">
+        <!--Start SmallBox_TopCurveDiv-->
+        <div class="SmallBox_TopCurveDiv">
+        </div>
+        <!--End SmallBox_TopCurveDiv-->
+        <!--Start SmallBox_MiddleDiv-->
+        <div class="SmallBox_MiddleDiv">
+            <p>
+                <img id="img_tips" src="./PunjabTourism   Destination_files/TravelTips_icon.png" width="35" onclick="Redirection(&#39;TravelTips.aspx&#39;);" style="cursor: pointer;" height="35" alt=""></p>
+            <h5>
+                <a id="a_Travel_Tips" href="http://www.punjabtourism.gov.in/TravelTips.aspx" style="">Itineraries</a></h5>
+        </div>
+        <!--End SmallBox_MiddleDiv-->
+        <!--Start SmallBox_BottomDiv-->
+        <div class="SmallBox_BottomDiv">
+        </div>
+        <!--Start SmallBox_BottomDiv-->
+    </div>
+    <!--End -->
+    <!--Start --->
+    <div class="SmallBox_InnerDiv" style="margin: 0px 0px 0px 0px" id="Travel_Stay_div">
+        <!--Start SmallBox_TopCurveDiv-->
+        <div class="SmallBox_TopCurveDiv">
+        </div>
+        <!--End SmallBox_TopCurveDiv-->
+        <!--Start SmallBox_MiddleDiv-->
+        <div class="SmallBox_MiddleDiv">
+            <p>
+                <img id="img_stay" src="./PunjabTourism   Destination_files/Stay_icon.png" onclick="Redirection(&#39;Stay.aspx&#39;);" style="cursor: pointer;" width="35" height="35" alt=""></p>
+            <h5>
+                <a id="a_Stay" href="http://www.punjabtourism.gov.in/Stay.aspx" style="">Stay</a></h5>
+        </div>
+        <!--End SmallBox_MiddleDiv-->
+        <!--Start SmallBox_BottomDiv-->
+        <div class="SmallBox_BottomDiv">
+        </div>
+        <!--Start SmallBox_BottomDiv-->
+    </div>
+    <!--End -->
+    <!--Start --->
+    <div class="SmallBox_InnerDiv" style="margin: 0px 0px 0px 23px" id="Travel_Images_div">
+        <!--Start SmallBox_TopCurveDiv-->
+        <div class="SmallBox_TopCurveDiv">
+        </div>
+        <!--End SmallBox_TopCurveDiv-->
+        <!--Start SmallBox_MiddleDiv-->
+        <div class="SmallBox_MiddleDiv">
+            <p>
+                <img id="img_gal" src="./PunjabTourism   Destination_files/ImageGallery_icon.png" width="35" onclick="Redirection(&#39;ImageGallery.aspx&#39;);" style="cursor: pointer;" height="35" alt=""></p>
+            <h5>
+                <a id="a_Images" href="http://www.punjabtourism.gov.in/ImageGallery.aspx" style="">Images</a></h5>
+        </div>
+        <!--End SmallBox_MiddleDiv-->
+        <!--Start SmallBox_BottomDiv-->
+        <div class="SmallBox_BottomDiv">
+        </div>
+        <!--Start SmallBox_BottomDiv-->
+    </div>
+    <!--End -->
+    <!--Start SmallBox_InnerDiv-->
+    <div class="SmallBox_InnerDiv" id="Travel_TourOperators_div">
+        <!--Start SmallBox_TopCurveDiv-->
+        <div class="SmallBox_TopCurveDiv">
+        </div>
+        <!--End SmallBox_TopCurveDiv-->
+        <!--Start SmallBox_MiddleDiv-->
+        <div class="SmallBox_MiddleDiv">
+            <p>
+                <img id="img_touroperators" src="./PunjabTourism   Destination_files/TravelMap_icon.png" width="35" onclick="Redirection(&#39;Common.aspx?Mode=TourOperators&#39;);" style="cursor: pointer;" height="35" alt=""></p>
+            <h5>
+                <a id="a_touroperators" href="http://www.punjabtourism.gov.in/Common.aspx?Mode=TourOperators" style="">Tour Operators</a></h5>
+        </div>
+        <!--End SmallBox_MiddleDiv-->
+        <!--Start SmallBox_BottomDiv-->
+        <div class="SmallBox_BottomDiv">
+        </div>
+        <!--Start SmallBox_BottomDiv-->
+    </div>
+    <!--End SmallBox_InnerDiv-->
+    <!--Start --->
+    <div class="SmallBox_InnerDiv" id="Travel_FarmToursim_div" style="margin-left: 23px;">
+        <!--Start SmallBox_TopCurveDiv-->
+        <div class="SmallBox_TopCurveDiv">
+        </div>
+        <!--End SmallBox_TopCurveDiv-->
+        <!--Start SmallBox_MiddleDiv-->
+        <div class="SmallBox_MiddleDiv">
+            <p>
+                <img id="img_FarmToursim" src="./PunjabTourism   Destination_files/Stay_icon.png" width="35" onclick="return Redirection(&#39;Common.aspx?Mode=FarmToursim&#39;);" style="cursor: pointer;" height="35" alt=""></p>
+            <h5>
+                <a id="a_farmtourism" href="http://www.punjabtourism.gov.in/Common.aspx?Mode=FarmToursim" style="">Farm<br>
+                    Tourism</a></h5>
+        </div>
+        <!--End SmallBox_MiddleDiv-->
+        <!--Start SmallBox_BottomDiv-->
+        <div class="SmallBox_BottomDiv">
+        </div>
+        <!--Start SmallBox_BottomDiv-->
+    </div>
+    <!--End -->
+</div>
+<!--End SmallBox_OuterDiv-->
+
+<div class="Left_Navigation" style="margin-top:10px;">
+    <ul id="ul_TradeNavigation">
+        <li><a href="http://www.punjabtourism.gov.in/TravelEBrochure.aspx" id="a_Ebrochures">Download Brochures</a></li>
+    </ul>
+</div>
+
+<div id="divRandomVideos" style="padding: 10px 0px 0px 0px; display: none;">
+    <iframe width="197" id="frmVideoUrl" style="padding: 10px 0px 0px 0px;" height="150" src="" frameborder="0" allowfullscreen=""></iframe>
+</div>
+<script language="javascript" type="text/javascript">
+
+
+    $(function () {
+
+        $.post("UserControls/Ajax/AjaxGallery.aspx",
+            {
+                Mode: "GETRANDOMVIDEO"
+            },
+            function (VarResponseData) {
+
+                if (VarResponseData.toUpperCase() != "FAILURE") {
+                    document.getElementById("frmVideoUrl").src = VarResponseData;
+                    document.getElementById("divRandomVideos").style.display = "block";
+                }
+            } //end of varresponse
+         ); //end of Ajax call
+
+        return false;
+
+    });
+
+    function Redirection(url) {
+
+        window.location = url;
+
+    }
+    
+
+</script>
+
+                    <!--end usercontrol Travel-->
+                    <!--Start ThePeople_OuterDiv-->
+                    
+<div id="ThePeopleID">
+
+</div>
+<script type="text/javascript">
+
+    var mvarMenuTab = "";
+    //nt
+    $(function () {
+        mvarMenuTab = "DestinatiosOverview";
+       // GetPeopleDetails();
+
+    });
+
+//    function GetPeopleDetails() {
+//      
+//        $.post("UserControls/Ajax/ThePeopleAjax.aspx",
+//            {
+//                Mode: "GETPEOPLEDETAILS",
+//                ThePeopleImage: mvarMenuTab
+//            },
+//            function (VarResponseData) {
+//                document.getElementById("ThePeopleID").innerHTML = VarResponseData;
+//            } //end of varresponse
+//         );     //end of Ajax call
+
+//        return false;
+//    }
+
+//    function GetPeopleDetailsReadMore(mvarMenuTab1) {
+
+//        $.post("UserControls/Ajax/ThePeopleAjax.aspx",
+//            {
+//                Mode: "GETPEOPLEDETAILS",
+//                ThePeopleImage: mvarMenuTab1
+//            },
+//            function (VarResponseData) {
+//                document.getElementById("ThePeopleID").innerHTML = VarResponseData;
+//            } //end of varresponse
+//         );     //end of Ajax call
+
+//        return false;
+//    }
+
+       
+</script>
+
+                    <!--End ThePeople_OuterDiv-->
+                    <!--Start Usercontrol PostComment-->
+                    
+<link href="./PunjabTourism   Destination_files/validationEngine.css" rel="stylesheet" type="text/css">
+<link href="./PunjabTourism   Destination_files/msgBoxLight.css" rel="stylesheet" type="text/css">
+<script src="./PunjabTourism   Destination_files/jquery.validationEngine.js" type="text/javascript"></script>
+<script src="./PunjabTourism   Destination_files/jquery.msgBox.js" type="text/javascript"></script>
+<script type="text/javascript" language="javascript">
+
+    //global variable
+    var _varCIText = "";
+    var _CommentUrl = "";
+
+    //ready Function.
+    $(document).ready(function () {
+        _CommentUrl = document.URL;
+        loadCaptcha();
+        ResetCommentForm();
+        ResetNewsLetterForm();
+
+    });
+
+    function sizeBox() {
+        if (document.getElementById('thebox').value.length > document.getElementById('thebox').cols) {
+            document.getElementById('thebox').cols = document.getElementById('thebox').value.length;
+        }
+    }
+
+
+    function inputFocus(i) {
+        if (i.value == i.defaultValue) { i.value = ""; i.style.color = "#000"; }
+    }
+    function inputBlur(i) {
+        if (i.value == "") { i.value = i.defaultValue; i.style.color = "#888"; }
+    }
+
+    function validatePostComment() {
+
+
+        var x = document.forms["frmComment"]["email"].value;
+        var y = document.forms["frmComment"]["comment"].value;
+
+        var atpos = x.indexOf("@");
+        var dotpos = x.lastIndexOf(".");
+        if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= x.length) {
+            alert("Please enter a valid e-mail address");
+            return false;
+        }
+
+        if (y == "Enter your comment here") {
+            alert("Please enter a valid comment");
+            return false;
+        }
+
+        AddComment();
+
+    }
+
+    function validateNewsletter() {
+
+        var NewsLetterSubscriptionID = document.forms["frmNewsLetter"]["emailNewsLetter"].value;
+
+        var atpos = NewsLetterSubscriptionID.indexOf("@");
+        var dotpos = NewsLetterSubscriptionID.lastIndexOf(".");
+        if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= NewsLetterSubscriptionID.length) {
+            alert("Please enter a valid e-mail address");
+            return false;
+        }
+
+        GetNewsLetter();
+    }
+
+
+    function ResetCommentForm() {
+        frmComment.reset();
+        return false;
+    }
+
+    function ResetNewsLetterForm() {
+
+        frmNewsLetter.reset();
+        return false;
+    }
+
+    //# Sahil:090612 -- Function to add new comment
+    function AddComment() {
+
+        var varEmailC = document.getElementById("txtEmailC").value;
+        var varCommentC = document.getElementById("txtCommentC").value;      
+
+        if (_varCIText == $('#txtCaptchaText').val()) {
+
+            $.post("Ajax/AjaxContactUs.aspx",
+
+            { Mode: "ADDNEWCOMMENT",
+                Email: varEmailC,
+                Comment: varCommentC,
+                Url: _CommentUrl,
+                CaptchaText:_varCIText
+
+            },
+                function (VarResponseData) {
+
+                    if (VarResponseData == "SUCCESS") {
+
+                        $.msgBox({
+                            title: "Message",
+                            content: "Comment has been Posted Successfully",
+                            type: "info"
+
+                        });
+
+                        ResetCommentForm();
+                        loadCaptcha();
+                    }
+
+                }); //End of Ajax
+        }
+        else {
+
+            $.msgBox({
+                title: "Message",
+                content: "Please enter the correct Captcha Image text.",
+                type: "info"
+
+            });
+            return false;
+        }
+
+    }  // end of function AddComment
+
+    //# Sahil:090612 -- Function to get news letter
+    function GetNewsLetter() {
+
+        $.post("Ajax/AjaxContactUs.aspx",
+        {
+            Mode: "GETNEWSLETTER",
+            Email: $("#txtEmailN").val()
+        },
+        function (VarResponseData) {
+            if (VarResponseData == "SUCCESS") {
+
+                $.msgBox({
+                    title: "Message",
+                    content: "You are now Subscribed to our news letter.",
+                    type: "info"
+
+                });
+
+                ResetNewsLetterForm();
+
+            }
+            else {
+
+                $.msgBox({
+                    title: "Message",
+                    content: "This email address is already Subscribed to our news letter.",
+                    type: "info"
+
+                });
+
+                ResetNewsLetterForm();
+
+            }
+
+        });          //End of Ajax
+        return false;
+    }  // end of function GetNewsLetter() 
+
+
+
+    //# Sahil:090612 -- Function to get news letter
+    function loadCaptcha() {
+        _varCIText = "";
+        $.post("Ajax/AjaxContactUs.aspx",
+        {
+            Mode: "GenerateCaptcha"
+        },
+        function (VarResponseData) {
+            
+            if (VarResponseData.split('##@#')[0] == "SUCCESS") {
+                document.getElementById("m_imgCaptcha").src = "";
+                document.getElementById("m_imgCaptcha").src = VarResponseData.split('##@#')[1];
+                _varCIText = VarResponseData.split('##@#')[2];
+            }
+        });          //End of Ajax
+        return false;
+    }  // end of function GetNewsLetter() 
+
+        
+</script>
+<!--Start Post_Comment_Div-->
+<div class="Post_Comment_Div">
+    <h4>
+        Post a Comment</h4>
+    <form method="post" action="./PunjabTourism   Destination_files/PunjabTourism   Destination.htm" id="frmComment" onsubmit="return validatePostComment();">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTAyOTMzNjUzMmRkaQp4T8HQN2YRKHAHf8ZOW9WP8TgFg5fwqwnbcZAaFQs=">
+</div>
+
+    <input type="text" id="txtEmailC" maxlength="50" name="email" title="Enter your email address" value="Enter your email address" onfocus="inputFocus(this)" onblur="inputBlur(this)" style="">
+    <input type="text" id="txtCommentC" maxlength="500" name="comment" title="Enter your comment here" value="Enter your comment here" onfocus="inputFocus(this)" onblur="inputBlur(this)" style="padding: 10px 0px 130px 10px;">
+    <img id="m_imgCaptcha" alt="Click to Change image" style="margin-top: 5px;" src="" title="Click to Change image" onclick="javascript:return loadCaptcha();">
+    <input type="text" id="txtCaptchaText" value="Enter above text here" onfocus="inputFocus(this)" onblur="inputBlur(this)">
+    <input type="button" onclick="return validatePostComment();" id="Submit1" style="width: 94px;
+        height: 30px; margin: 6px 0px 0px 0px; border: none; cursor: pointer; cursor: hand;
+        background: url(images/submit_pt1.png) repeat-x" value="">
+        
+    </form>
+    <h4 style="margin-top: 20px;">
+        Subscribe to Our Newsletter</h4>
+    <form id="frmNewsLetter" name="frmNewsLetter" method="post" action="" onsubmit="return validateNewsletter();">
+    <input type="text" id="txtEmailN" maxlength="50" name="emailNewsLetter" title="Enter your email address" value="Enter your email address" onfocus="inputFocus(this)" onblur="inputBlur(this)" style="">
+    <input type="button" onclick="return validateNewsletter();" id="Submit3" style="width: 94px;
+        height: 30px; margin: 6px 0px 0px 0px; border: none; cursor: pointer; cursor: hand;
+        background: url(images/submit_pt1.png) repeat-x;" value="">
+    </form>
+</div>
+<!--End Post_Comment_Div-->
+
+                    <!--end Usercontrol PostComment-->
+                </div>
+                <!--End aboutPunajb_LeftPannel-->
+                <!--Start aboutPunajb_RightPannel-->
+                <div class="aboutPunajb_RightPannel">
+                    
+
+<div class="container" id="container_div" style="margin-left:14px;">
+	<div class="wt-rotator" id="wt-rotator_div">
+    	<div class="screen">
+            <noscript>
+            	&lt;!-- placeholder 1st image when javascript is off --&gt;
+                &lt;img src="Images/g1.jpg"/&gt;
+            </noscript>
+      	</div>
+        <div id="BannerImages" class="c-panel">
+        
+        </div>
+    </div>	
+</div>
+<link rel="stylesheet" type="text/css" href="./PunjabTourism   Destination_files/wt-rotator.css">
+<script type="text/javascript" src="./PunjabTourism   Destination_files/jquery.easing-1.3.min.js"></script>
+<script type="text/javascript" src="./PunjabTourism   Destination_files/jquery.wt-rotator.min.js"></script>
+<script type="text/javascript" language="javascript">
+
+    //Variables
+    var Arr_ImagesName = "";
+    var ImageName = "";
+    var transitionEffname = "";
+    var lasttransitionName = "";
+
+
+    //#A VA:090712 - Function used to filter Header Images
+    function Banner_DisplayHeaderImage(mvarMenuName) {
+
+        $.post("UserControls/Ajax/AjaxBanner.aspx", {
+            Mode: "DisplayBannerImagesForMenu", MenuName: mvarMenuName
+        },
+
+                        function (VarResponseData) {
+                           
+                            if (VarResponseData != "") {
+                                //# VA:091012 - Split ResponseData
+                                //Arr_ImagesName = VarResponseData.split("###");
+                                $('#BannerImages').empty();
+                                $('#BannerImages').append(VarResponseData);
+                                //for (var i = 0; i < Arr_ImagesName.length; i++)
+                                //{ $('#slideshowHolder').text(Arr_ImagesName[i]); }
+                            } //END OF if (VarResponseData
+                            var val = navigator.userAgent.toLowerCase();
+                            if (val.indexOf("msie") > -1) {
+                                $(".container").wtRotator({
+                                    //width: 966,
+                                    width: 744,
+                                    height: 281,
+                                    thumb_width: 24,
+                                    thumb_height: 24,
+                                    button_width: 24,
+                                    button_height: 24,
+                                    button_margin: 5,
+                                    auto_start: true,
+                                    delay: 3000,
+                                    play_once: false,
+                                    transition: "fade",
+                                    transition_speed: 800,
+                                    auto_center: true,
+                                    easing: "",
+                                    cpanel_position: "inside",
+                                    cpanel_align: "BR",
+                                    timer_align: "top",
+                                    display_thumbs: false,
+                                    display_dbuttons: false,
+                                    display_playbutton: false,
+                                    display_thumbimg: false,
+                                    display_side_buttons: false,
+                                    display_numbers: false,
+                                    display_timer: false,
+                                    mouseover_select: false,
+                                    mouseover_pause: false,
+                                    cpanel_mouseover: false,
+                                    text_mouseover: false,
+                                    text_effect: "fade",
+                                    text_sync: false,
+                                    tooltip_type: "text",
+                                    shuffle: false,
+                                    block_size: 75,
+                                    vert_size: 55,
+                                    horz_size: 50,
+                                    block_delay: 25,
+                                    vstripe_delay: 75,
+                                    hstripe_delay: 180
+                                });
+                            }
+                            else {
+                                $(".container").wtRotator({
+                                    //width: 966,
+                                    width: 744,
+                                    height: 281,
+                                    thumb_width: 24,
+                                    thumb_height: 24,
+                                    button_width: 24,
+                                    button_height: 24,
+                                    button_margin: 5,
+                                    auto_start: true,
+                                    delay: 3000,
+                                    play_once: false,
+                                    transition: "fade",
+                                    transition_speed: 800,
+                                    auto_center: true,
+                                    easing: "",
+                                    cpanel_position: "inside",
+                                    cpanel_align: "BR",
+                                    timer_align: "top",
+                                    display_thumbs: false,
+                                    display_dbuttons: false,
+                                    display_playbutton: false,
+                                    display_thumbimg: false,
+                                    display_side_buttons: false,
+                                    display_numbers: false,
+                                    display_timer: false,
+                                    mouseover_select: false,
+                                    mouseover_pause: false,
+                                    cpanel_mouseover: false,
+                                    text_mouseover: false,
+                                    text_effect: "fade",
+                                    text_sync: false,
+                                    tooltip_type: "text",
+                                    shuffle: false,
+                                    block_size: 75,
+                                    vert_size: 55,
+                                    horz_size: 50,
+                                    block_delay: 25,
+                                    vstripe_delay: 75,
+                                    hstripe_delay: 180
+                                });
+                            }
+                            //$('#slideshowHolder').jqFancyTransitions({ width: 968, height: 360});
+                        });             //END OF function (VarResponse...
+    } //End of function
+
+
+    //#A VA:091012 - Function used to Display images wrt clicked SubMenu
+    function DisplayHeaderImagesForSubMenus(mvarMenuName, mvarSubMenu, mvarSubMenuTypeID, mvarBannereffect, varFlag) {
+
+      
+        $.post("UserControls/Ajax/AjaxBanner.aspx",
+                            { Mode: "DisplayHeaderImagesForSubMenus", SubMenuName: mvarSubMenu,
+                                SubMenuTypeID: mvarSubMenuTypeID, MenuName: mvarMenuName, Flag: varFlag
+                            },
+
+                    function (VarResponseData) {
+                        if (VarResponseData != "") {
+                            //# VA:091012 - Split ResponseData
+                            //                            Arr_ImagesName = VarResponseData.split("###");
+                            //                            $('#slideshowHolder').empty();
+
+                            //                            for (var i = 0; i < Arr_ImagesName.length; i++) {
+                            //                                $('#slideshowHolder').append(Arr_ImagesName[i]);
+                            //                            }
+                            $('#BannerImages').empty();
+                            $('#BannerImages').append(VarResponseData);
+
+                        } //END OF if (varResponseData ...
+                        var val = navigator.userAgent.toLowerCase();
+                        if (val.indexOf("msie") > -1) {
+                            $(".container").wtRotator({
+                                //width: 966,
+                                //width: 600,
+                                width: 743,
+                                height: 281,
+                                thumb_width: 24,
+                                thumb_height: 24,
+                                button_width: 24,
+                                button_height: 24,
+                                button_margin: 5,
+                                auto_start: true,
+                                delay: 3000,
+                                play_once: false,
+                                transition: "fade",
+                                transition_speed: 800,
+                                auto_center: true,
+                                easing: "",
+                                cpanel_position: "inside",
+                                cpanel_align: "BR",
+                                timer_align: "top",
+                                display_thumbs: false,
+                                display_dbuttons: false,
+                                display_playbutton: false,
+                                display_thumbimg: false,
+                                display_side_buttons: false,
+                                display_numbers: false,
+                                display_timer: false,
+                                mouseover_select: false,
+                                mouseover_pause: false,
+                                cpanel_mouseover: false,
+                                text_mouseover: false,
+                                text_effect: "fade",
+                                text_sync: false,
+                                tooltip_type: "text",
+                                shuffle: false,
+                                block_size: 75,
+                                vert_size: 55,
+                                horz_size: 50,
+                                block_delay: 25,
+                                vstripe_delay: 75,
+                                hstripe_delay: 180
+                            });
+                        }
+                        else {
+                            $(".container").wtRotator({
+                                //width: 966,
+                                //width: 600,
+                                width: 743,
+                                height: 281,
+                                thumb_width: 24,
+                                thumb_height: 24,
+                                button_width: 24,
+                                button_height: 24,
+                                button_margin: 5,
+                                auto_start: true,
+                                delay: 3000,
+                                play_once: false,
+                                transition: "fade",
+                                transition_speed: 800,
+                                auto_center: true,
+                                easing: "",
+                                cpanel_position: "inside",
+                                cpanel_align: "BR",
+                                timer_align: "top",
+                                display_thumbs: false,
+                                display_dbuttons: false,
+                                display_playbutton: false,
+                                display_thumbimg: false,
+                                display_side_buttons: false,
+                                display_numbers: false,
+                                display_timer: false,
+                                mouseover_select: false,
+                                mouseover_pause: false,
+                                cpanel_mouseover: false,
+                                text_mouseover: false,
+                                text_effect: "fade",
+                                text_sync: false,
+                                tooltip_type: "text",
+                                shuffle: false,
+                                block_size: 75,
+                                vert_size: 55,
+                                horz_size: 50,
+                                block_delay: 25,
+                                vstripe_delay: 75,
+                                hstripe_delay: 180
+                            });
+                        }
+                        //$('#slideshowHolder').jqFancyTransitions({ width: 968, height: 360, effect: mvarBannereffect });
+                    });     //END OF function (varResponseData ...
+    } //End of Function...
+
+    //#A VA:091012 - Function used to Display images wrt clicked SubMenu
+    function DisplaySubMenusBannerImages(mvarMenuName, mvarSubMenu, mvarSubMenuTypeID, varFlag,varTableID,varType) {
+        $.post("UserControls/Ajax/AjaxBanner.aspx",
+                            { Mode: "DisplaySubMenusBannerImages", SubMenuName: mvarSubMenu,
+                                SubMenuTypeID: mvarSubMenuTypeID, MenuName: mvarMenuName, Flag: varFlag, TableID: varTableID, Type: varType
+                            },
+
+                    function (VarResponseData) {
+                        if (VarResponseData != "") {
+                            //# VA:091012 - Split ResponseData
+                            //                            Arr_ImagesName = VarResponseData.split("###");
+                            //                            $('#slideshowHolder').empty();
+
+                            //                            for (var i = 0; i < Arr_ImagesName.length; i++) {
+                            //                                $('#slideshowHolder').append(Arr_ImagesName[i]);
+                            //                            }
+                            $('#BannerImages').empty();
+                            $('#BannerImages').append(VarResponseData);
+
+                        } //END OF if (varResponseData ...
+                        var val = navigator.userAgent.toLowerCase();
+                        if (val.indexOf("msie") > -1) {
+                            $(".container").wtRotator({
+                                //width: 966,
+                                //width: 600,
+                                width: 743,
+                                height: 281,
+                                thumb_width: 24,
+                                thumb_height: 24,
+                                button_width: 24,
+                                button_height: 24,
+                                button_margin: 5,
+                                auto_start: true,
+                                delay: 3000,
+                                play_once: false,
+                                transition: "fade",
+                                transition_speed: 800,
+                                auto_center: true,
+                                easing: "",
+                                cpanel_position: "inside",
+                                cpanel_align: "BR",
+                                timer_align: "top",
+                                display_thumbs: false,
+                                display_dbuttons: false,
+                                display_playbutton: false,
+                                display_thumbimg: false,
+                                display_side_buttons: false,
+                                display_numbers: false,
+                                display_timer: false,
+                                mouseover_select: false,
+                                mouseover_pause: false,
+                                cpanel_mouseover: false,
+                                text_mouseover: false,
+                                text_effect: "fade",
+                                text_sync: false,
+                                tooltip_type: "text",
+                                shuffle: false,
+                                block_size: 75,
+                                vert_size: 55,
+                                horz_size: 50,
+                                block_delay: 25,
+                                vstripe_delay: 75,
+                                hstripe_delay: 180
+                            });
+                        }
+                        else {
+                            $(".container").wtRotator({
+                                //width: 966,
+                                //width: 600,
+                                width: 743,
+                                height: 281,
+                                thumb_width: 24,
+                                thumb_height: 24,
+                                button_width: 24,
+                                button_height: 24,
+                                button_margin: 5,
+                                auto_start: true,
+                                delay: 3000,
+                                play_once: false,
+                                transition: "fade",
+                                transition_speed: 800,
+                                auto_center: true,
+                                easing: "",
+                                cpanel_position: "inside",
+                                cpanel_align: "BR",
+                                timer_align: "top",
+                                display_thumbs: false,
+                                display_dbuttons: false,
+                                display_playbutton: false,
+                                display_thumbimg: false,
+                                display_side_buttons: false,
+                                display_numbers: false,
+                                display_timer: false,
+                                mouseover_select: false,
+                                mouseover_pause: false,
+                                cpanel_mouseover: false,
+                                text_mouseover: false,
+                                text_effect: "fade",
+                                text_sync: false,
+                                tooltip_type: "text",
+                                shuffle: false,
+                                block_size: 75,
+                                vert_size: 55,
+                                horz_size: 50,
+                                block_delay: 25,
+                                vstripe_delay: 75,
+                                hstripe_delay: 180
+                            });
+                        }
+                        //$('#slideshowHolder').jqFancyTransitions({ width: 968, height: 360, effect: mvarBannereffect });
+                    });     //END OF function (varResponseData ...
+    } //End of Function...
+
+
+
+
+
+    //#A Sahil:290113 - Function used to get banner images for homepage
+    function Banner_DisplayHeaderImageHomepage(mvarMenuName) {
+
+        $("#container_div").css("margin-left", "0px");
+        $("#wt-rotator_div").css("width", "1280px");
+        $("#wt-rotator_div").css("height", "445px");
+
+        $.post("UserControls/Ajax/AjaxBanner.aspx", {
+            Mode: "DisplayBannerImagesForMenu", MenuName: mvarMenuName
+        },
+
+                        function (VarResponseData) {
+                            if (VarResponseData != "") {
+                                //# VA:091012 - Split ResponseData
+                                //Arr_ImagesName = VarResponseData.split("###");
+                                $('#BannerImages').empty();
+                                $('#BannerImages').append(VarResponseData);
+                                //for (var i = 0; i < Arr_ImagesName.length; i++)
+                                //{ $('#slideshowHolder').text(Arr_ImagesName[i]); }
+                            } //END OF if (VarResponseData
+                            var val = navigator.userAgent.toLowerCase();
+                            if (val.indexOf("msie") > -1) {
+                                $(".container").wtRotator({
+                                    //width: 966,
+                                    width: 1280,
+                                    height: 445,
+                                    thumb_width: 24,
+                                    thumb_height: 24,
+                                    button_width: 24,
+                                    button_height: 24,
+                                    button_margin: 5,
+                                    auto_start: true,
+                                    delay: 3000,
+                                    play_once: false,
+                                    transition: "fade",
+                                    transition_speed: 800,
+                                    auto_center: true,
+                                    easing: "",
+                                    cpanel_position: "inside",
+                                    cpanel_align: "BR",
+                                    timer_align: "top",
+                                    display_thumbs: false,
+                                    display_dbuttons: false,
+                                    display_playbutton: false,
+                                    display_thumbimg: false,
+                                    display_side_buttons: false,
+                                    display_numbers: false,
+                                    display_timer: false,
+                                    mouseover_select: false,
+                                    mouseover_pause: false,
+                                    cpanel_mouseover: false,
+                                    text_mouseover: false,
+                                    text_effect: "fade",
+                                    text_sync: false,
+                                    tooltip_type: "text",
+                                    shuffle: false,
+                                    block_size: 75,
+                                    vert_size: 55,
+                                    horz_size: 50,
+                                    block_delay: 25,
+                                    vstripe_delay: 75,
+                                    hstripe_delay: 180
+                                });
+                            }
+                            else {
+                                $(".container").wtRotator({
+                                    //width: 966,
+                                    width: 1280,
+                                    height: 445,
+                                    thumb_width: 24,
+                                    thumb_height: 24,
+                                    button_width: 24,
+                                    button_height: 24,
+                                    button_margin: 5,
+                                    auto_start: true,
+                                    delay: 3000,
+                                    play_once: false,
+                                    transition: "fade",
+                                    transition_speed: 800,
+                                    auto_center: true,
+                                    easing: "",
+                                    cpanel_position: "inside",
+                                    cpanel_align: "BR",
+                                    timer_align: "top",
+                                    display_thumbs: false,
+                                    display_dbuttons: false,
+                                    display_playbutton: false,
+                                    display_thumbimg: false,
+                                    display_side_buttons: false,
+                                    display_numbers: false,
+                                    display_timer: false,
+                                    mouseover_select: false,
+                                    mouseover_pause: false,
+                                    cpanel_mouseover: false,
+                                    text_mouseover: false,
+                                    text_effect: "fade",
+                                    text_sync: false,
+                                    tooltip_type: "text",
+                                    shuffle: false,
+                                    block_size: 75,
+                                    vert_size: 55,
+                                    horz_size: 50,
+                                    block_delay: 25,
+                                    vstripe_delay: 75,
+                                    hstripe_delay: 180
+                                });
+                            }
+                            //$('#slideshowHolder').jqFancyTransitions({ width: 968, height: 360});
+                        });             //END OF function (VarResponse...
+    } //End of function
+
+</script>
+
+
+                    <div class="About_PunjabInnerDiv">
+                        <!--Start About_PunjabInnerDiv-->
+                        <h2 style="padding: 0px 0px 0px 0px;">
+                            Punjab</h2>
+                        <!--Start Destination_bodyContent-->
+                        <div class="Destination_bodyContent">
+                            <!--Start Destination_TopSide-->
+                            <div class="Destination_TopSide">
+                            </div>
+                            <!--End Destination_TopSide-->
+                            <!--Start Destination_MiddleDiv-->
+                            
+                            <div class="Destination_Map_MiddleDiv">
+                                <div style="width: 200px; height: 113px; position: absolute; z-index: 100; margin-left: -5px;">
+                                    <img src="./PunjabTourism   Destination_files/PunjabHighlight.jpg">
+                                </div>
+                                <center>
+                                    <div id="custom_cursor" style="background-color: #fcfcfc">
+                                        <div class="map" style="display: block; position: relative; padding: 0px; width: 600px; height: 658px; background: url(http://www.punjabtourism.gov.in/Images/punjab.jpg);"><canvas style="width: 600px; height: 658px; position: absolute; left: 0px; top: 0px; padding: 0px; border: 0px; opacity: 1;" height="658" width="600"></canvas><img class="map maphilighted" src="./PunjabTourism   Destination_files/punjab.jpg" usemap="#punjab" alt="" style="opacity: 0; position: absolute; left: 0px; top: 0px; padding: 0px; border: 0px;"></div>
+                                        <map name="punjab">
+                                            <area shape="poly" id="Amritsar" coords="203,99,208,101,209,108,207,109,215,116,208,119,204,125,206,133,213,138,223,144,231,154,241,165,251,168,260,173,270,183,272,181,277,190,288,193,294,202,286,205,280,213,274,218,271,220,265,220,263,219,262,213,254,214,249,218,246,218,243,214,240,211,235,211,228,212,224,214,220,215,214,216,210,216,202,212,195,209,190,213,185,208,179,207,175,207,171,207,164,211,162,213,159,215,156,214,150,214,145,215,145,212,151,208,151,205,147,200,145,196,144,191,139,184,136,178,131,174,129,169,133,166,139,163,141,157,141,153,142,148,146,142,148,137,155,132,164,127,176,124,184,120,190,117,190,113,192,106,197,102,201,99," href="http://www.punjabtourism.gov.in/District.aspx?CityName=Amritsar" alt="">
+                                            
+                                            <area shape="poly" id="Bathinda" coords="254,584,249,590,244,596,237,598,237,595,235,589,232,586,233,573,223,580,215,580,211,575,202,569,196,564,187,561,180,559,167,559,158,559,160,553,160,541,160,534,152,529,147,521,145,514,160,515,164,514,161,510,163,501,165,494,165,488,172,484,173,480,179,473,180,467,188,469,195,468,203,467,211,465,216,465,224,464,223,458,223,451,223,445,225,440,238,438,243,426,249,431,252,441,260,444,263,438,269,442,265,448,268,457,271,466,277,477,276,490,280,496,286,505,283,510,282,521,277,528,268,530,260,537,262,545,267,554,264,558,255,560,245,562,249,571,253,578," href="http://www.punjabtourism.gov.in/District.aspx?CityName=Bathinda" alt="">
+                                            <area shape="poly" id="Faridkot" coords="172,463,190,467,218,466,222,456,224,450,220,444,216,443,215,427,209,417,211,407,200,389,189,382,176,376,162,370,144,370,135,376,125,386,133,392,143,394,149,405,152,418,161,425,161,436,171,446,167,449,170,459," href="http://www.punjabtourism.gov.in/District.aspx?CityName=Faridkot" alt="">
+                                            <area shape="poly" id="Fazilka" coords="9,463,19,455,21,447,16,444,17,436,23,443,26,436,34,428,43,431,47,419,48,410,61,406,75,393,85,385,82,377,103,372,114,374,123,381,120,388,118,396,124,405,117,409,123,415,112,417,102,418,106,427,105,437,94,443,84,452,97,458,89,463,90,472,85,482,79,486,79,495,81,499,90,497,89,511,100,518,107,524,99,526,101,536,111,544,106,561,85,562,66,560,46,560,24,558,13,553,4,544,12,533,21,519,22,497,22,484,9,468," href="http://www.punjabtourism.gov.in/District.aspx?CityName=Fazilka" alt="" title="">
+                                            <area shape="poly" id="Fatehgarh Sahib" coords="459,367,454,372,455,382,459,391,460,400,452,406,445,408,439,410,434,417,430,424,424,429,420,436,421,447,432,442,440,438,450,436,458,439,465,446,464,456,473,463,484,463,492,460,495,455,499,451,498,447,497,437,497,430,503,426,508,422,513,418,513,412,508,410,505,404,501,401,500,398,497,394,494,391,485,391,480,391,480,389,484,384,482,382,478,381,475,379,470,377,470,373,467,370,464,369," href="http://www.punjabtourism.gov.in/District.aspx?CityName=Fatehgarh%20Sahib" alt="">
+                                            <area shape="poly" id="Ferozepur" coords="90,372,93,359,99,359,100,353,107,348,111,343,116,339,121,334,130,335,134,326,139,319,148,314,158,317,166,315,175,310,177,303,194,294,207,297,222,306,221,299,226,298,240,314,224,329,229,335,224,345,215,353,209,359,208,372,204,379,200,389,189,382,176,374,164,370,155,370,140,371,133,378,124,384,113,375,100,375,95,375," href="http://www.punjabtourism.gov.in/District.aspx?CityName=Ferozepur" alt="" title="">
+                                            <area shape="poly" id="Gurdaspur" coords="336,90,332,95,327,98,323,103,322,112,324,121,324,129,322,140,321,150,321,162,319,174,312,181,311,189,305,190,299,191,294,198,291,198,288,192,284,188,277,188,277,185,274,181,271,178,264,178,260,176,259,171,257,168,247,167,242,165,239,160,238,155,233,152,229,150,223,146,216,143,210,139,205,134,203,128,204,122,211,119,215,118,215,116,211,115,208,113,207,107,206,103,204,97,211,95,222,95,232,96,242,93,252,95,256,92,260,84,268,87,272,83,277,76,281,70,288,63,293,58,297,66,306,72,312,76,321,74,327,79,333,85," href="http://www.punjabtourism.gov.in/District.aspx?CityName=Gurdaspur" alt="">
+                                            <area shape="poly" id="Hoshiarpur" coords="399,165,398,155,403,152,400,143,396,130,390,123,381,116,371,113,363,105,359,106,350,101,339,98,330,97,322,102,322,114,321,132,321,145,322,157,320,166,319,171,313,181,314,189,321,190,330,198,341,198,349,211,358,224,369,235,371,249,379,251,385,259,381,265,384,274,393,273,401,282,409,283,416,284,429,296,439,303,445,296,449,290,453,284,458,284,462,290,469,288,471,281,465,273,458,268,446,268,438,264,433,256,434,247,434,239,429,228,425,217,421,207,416,198,412,191,408,181,401,172," href="http://www.punjabtourism.gov.in/District.aspx?CityName=Hoshiarpur" alt="">
+                                            <area shape="poly" id="Jalandhar" coords="404,336,388,332,381,336,370,337,361,337,357,336,347,335,338,336,326,343,319,341,301,341,283,338,267,328,264,321,254,321,248,314,232,301,239,296,248,294,256,292,261,298,270,297,272,288,289,282,302,280,301,267,307,259,307,251,301,241,303,236,301,231,300,226,313,228,316,224,319,216,331,210,329,206,332,199,341,199,350,213,359,224,369,236,370,246,367,254,358,258,352,262,346,258,347,265,345,281,347,289,342,291,352,300,365,303,364,299,366,293,371,287,380,298,385,301,385,308,396,318,403,326,408,334," href="http://www.punjabtourism.gov.in/District.aspx?CityName=Jalandhar" alt="">
+                                            <area shape="poly" id="Kapurthala" coords="247,258,248,250,253,241,260,236,268,229,272,221,282,213,289,206,298,197,306,191,319,191,327,196,332,205,326,210,322,215,319,222,316,225,306,226,301,227,306,234,300,241,303,249,307,256,305,261,301,265,301,271,299,278,294,280,287,280,283,284,276,284,272,290,269,295,264,298,261,298,257,292,252,292,246,295,236,298,230,300,227,300,222,299,220,306,217,305,215,299,216,293,224,289,229,286,232,279,233,273,237,266,243,262," href="http://www.punjabtourism.gov.in/District.aspx?CityName=Kapurthala" alt="">
+                                            <area shape="poly" id="Kapurthala" coords="364,302,354,304,350,296,345,291,349,286,344,280,346,273,344,269,347,265,345,259,351,261,352,255,361,256,369,251,380,252,385,259,380,263,382,273,378,279,372,284,365,289,360,294,365,299," href="http://www.punjabtourism.gov.in/District.aspx?CityName=Kapurthala" alt="">
+                                            <area shape="poly" id="Ludhiana" coords="456,402,443,407,432,413,421,432,409,420,400,421,391,432,384,410,367,407,362,413,361,420,341,416,335,423,325,424,320,421,315,421,309,429,303,421,292,428,288,420,282,406,292,392,285,388,288,381,285,370,284,361,288,351,284,338,295,341,310,342,327,342,339,337,356,334,366,337,383,337,387,333,403,336,423,338,444,336,465,342,461,358,474,361,474,365,457,367,452,376,451,386,457,393,456,398," href="http://www.punjabtourism.gov.in/District.aspx?CityName=Ludhiana" alt="">
+                                            
+                                            
+                                            <area shape="poly" id="Muktsar" coords="107,561,106,552,110,544,101,536,101,528,105,525,100,518,93,517,89,512,93,500,81,498,78,496,81,490,86,481,89,464,97,458,87,458,84,453,95,445,106,435,103,422,104,419,121,418,124,412,119,411,118,407,124,406,119,398,119,392,121,385,132,390,140,395,145,402,152,410,154,422,162,426,161,437,171,447,167,450,171,465,180,466,174,478,172,485,168,487,164,492,162,496,161,508,167,514,157,516,147,516,145,521,153,530,161,541,157,555,153,567,145,574,137,570,129,567,122,562,112,563," href="http://www.punjabtourism.gov.in/District.aspx?CityName=Muktsar" alt="" title="">
+                                            <area shape="poly" id="Patiala" coords="499,449,495,442,501,428,509,419,516,411,525,426,533,435,540,432,545,424,552,433,554,442,549,453,545,463,536,467,538,477,537,487,529,494,517,505,525,514,525,522,513,536,505,542,490,535,485,525,481,516,476,519,480,525,477,527,478,533,466,527,469,533,466,538,452,529,444,522,441,527,447,533,451,538,448,545,442,554,440,562,438,570,437,575,439,584,445,584,448,588,444,591,438,592,433,598,424,600,425,595,419,591,413,591,411,588,406,583,399,583,389,580,393,576,400,572,405,566,409,559,413,551,420,544,425,538,422,531,418,525,412,518,411,510,417,510,425,505,431,500,437,494,431,489,427,483,416,482,408,483,402,478,401,472,414,464,416,454,414,448,418,445,429,440,441,437,452,436,463,440,466,448,464,458,477,465,494,459," href="http://www.punjabtourism.gov.in/District.aspx?CityName=Patiala" alt="" title="">
+                                            <area shape="poly" id="Pathankot" coords="294,60,294,55,291,51,291,48,291,44,297,42,300,41,306,39,313,38,316,46,321,48,324,46,324,43,323,40,322,37,325,36,334,38,337,36,336,33,335,30,339,28,350,26,354,22,360,16,361,14,368,12,374,9,381,4,387,9,392,14,397,18,393,25,389,25,385,30,381,36,376,35,373,39,372,44,365,45,360,48,355,50,349,55,345,59,341,64,340,72,347,71,348,78,342,83,341,88,337,91,335,87,332,82,328,78,326,76,324,75,322,75,312,74,307,72,306,71,304,69,299,64," href="http://www.punjabtourism.gov.in/District.aspx?CityName=Pathankot" alt="" title="">
+                                            <area shape="poly" id="Rupnagar" coords="468,369,475,367,474,360,463,360,464,344,478,343,496,342,499,338,493,326,487,318,483,311,475,298,470,289,469,279,461,270,464,261,471,259,468,248,473,245,477,239,490,270,495,269,503,278,507,276,512,278,514,275,517,279,515,285,523,290,526,302,518,304,518,311,521,319,518,325,523,336,528,342,523,343,523,348,529,356,518,364,514,374,510,384,502,392,499,396,493,391,484,391,479,389,481,381,474,380,469,374," href="http://www.punjabtourism.gov.in/District.aspx?CityName=Rupnagar" alt="" title="">
+                                            <area shape="poly" id="Sahibzada Ajit Singh Nagar" coords="511,413,502,403,502,394,510,382,519,368,526,359,534,353,545,353,555,362,553,374,542,384,537,389,544,400,553,410,561,404,573,419,576,435,573,451,576,473,574,484,567,477,566,470,558,467,547,462,550,453,556,444,552,431,545,425,536,433,522,425,522,417,518,411," href="http://www.punjabtourism.gov.in/District.aspx?CityName=Sahibzada%20Ajit%20Singh%20Nagar" alt="" title="">
+                                            <area shape="poly" id="Sangrur" coords="390,581,398,574,408,561,417,548,423,539,423,529,415,523,411,512,423,506,435,498,429,490,419,485,408,483,400,478,407,472,413,464,413,455,413,447,417,437,416,425,408,421,393,431,386,419,381,410,370,409,363,411,361,419,350,419,344,436,343,458,345,479,353,494,349,500,343,504,333,503,326,508,327,520,334,529,331,539,337,548,337,558,338,572,348,569,354,569,357,579,357,586,352,596,364,598,374,601,384,611,393,617,408,615,415,608,422,598,415,593,408,589,396,585," href="http://www.punjabtourism.gov.in/District.aspx?CityName=Sangrur" alt="" title="">
+                                            <area shape="poly" id="Shahid Bhagat Singh Nagar" coords="407,335,423,337,443,334,460,338,483,343,495,340,491,327,495,319,484,314,476,301,470,287,463,291,454,285,448,292,445,301,432,301,427,290,411,282,407,285,396,277,382,273,379,276,372,285,379,296,385,301,385,307,395,318,403,327,407,332," href="http://www.punjabtourism.gov.in/District.aspx?CityName=Shahid%20Bhagat%20Singh%20Nagar" alt="" title="">
+                                            <area shape="poly" id="Tarn Taran" coords="211,300,195,294,175,305,166,315,162,313,162,306,157,299,149,300,137,308,129,296,129,289,130,279,132,269,137,260,135,250,142,242,154,235,155,223,147,217,154,212,161,215,170,207,181,206,190,214,200,210,206,217,216,213,224,214,237,211,250,220,255,212,258,218,269,221,266,229,258,239,250,249,245,261,238,264,231,274,230,285,221,289,216,295," href="http://www.punjabtourism.gov.in/District.aspx?CityName=Tarn%20Taran" alt="" title="">
+                                        </map>
+                                    </div>
+                                    <!-- HIDDEN / POP-UP DIV -->
+                                    <div id="pop-up" style="top: 671px; left: 664px; display: none;">
+                                        <h4 id="h3_CityName">Gurdaspur</h4>
+                                        <img id="Img_Amr" src="./PunjabTourism   Destination_files/Gurdaspur_Takth-i-Akbari.gif">
+                                        <h5 id="h3_Text_Amr" style="color: Black;">Punjab’s northern-most district, Gurdaspur, is flanked by the Beas and Ravi rivers and has many flavors of both historical and spiritual significance 
+
+                                            <br>
+                                            <strong>Places To See:</strong><br>
+                                            <i>Takhat-i-Akbari<br>
+                                                Keshopur Wetland<br>
+                                                GurdwaraDarbar Sahib</i></h5>
+                                    </div>
+                                </center>
+                            </div>
+                            <!--End Destination_MiddleDiv-->
+                            <!--Start Destination_BottomDiv-->
+                            <div class="Destination_BottomDiv">
+                            </div>
+                            <!--End Destination_BottomDiv-->
+                        </div>
+                        <!--End Destination_bodyContent-->
+                    </div>
+                    <!--End About_PunjabInnerDiv-->
+                    <!--Start QuickLink_Div-->
+                    <div class="QuickLink_Div" style="display: none;">
+                        <p>
+                            <img src="./PunjabTourism   Destination_files/quick_link.png" width="147" height="19" alt=""></p>
+                        
+<ul class="QuickLink_Menu">
+    <li>
+        <h5>
+            <a href="http://www.punjabtourism.gov.in/QuickLinks.aspx?Option=Tenders">Tenders</a></h5>
+    </li>
+    <li><a>|</a></li>
+    <li>
+        <h5>
+            <a href="http://www.punjabtourism.gov.in/QuickLinks.aspx?Option=RightToInformation">Right To Information</a></h5>
+    </li>
+    <li><a>|</a></li>
+    <li>
+        <h5>
+            <a href="http://www.punjabtourism.gov.in/QuickLinks.aspx?Option=PTDC">PTDC</a></h5>
+    </li>
+    <li><a>|</a></li>
+    <li>
+        <h5>
+            <a href="http://www.punjabtourism.gov.in/QuickLinks.aspx?Option=UNWTO">UNWTO Master Plan</a></h5>
+    </li>
+    <li><a>|</a></li>
+    <li>
+        <h5>
+            <a href="http://www.punjabtourism.gov.in/QuickLinks.aspx?Option=ADB">ADB SafeGuards</a></h5>
+    </li>
+     <li><a>|</a></li>
+    <li>
+        <h5>
+            <a href="http://www.punjabtourism.gov.in/QuickLinks.aspx?Option=Jobs">Job Opportunity</a></h5>
+    </li>
+</ul>
+
+                    </div>
+                    <!--End QuickLink_Div-->
+                    <!--Start right_Facebook_link-->
+                    
+
+
+<script type="text/javascript">
+
+//    function ShareOnFacebook() {
+//    
+//        window.open("http://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fxcription.com/punjabtourim%2FHome.aspx");
+//    }
+//    function ShareOnTwitter() {
+//        window.open("https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fxcription.com/punjabtourism%2F&url=http%3A%2F%2Fxcription.com/punjabtourism%2FHome.aspx");
+//    }
+
+</script>
+
+
+
+
+
+
+                    <!--End right_Facebook_link-->
+                </div>
+                <!--End aboutPunajb_RightPannel-->
+            </div>
+            <!-- End bodyContent_div-->
+        </div>
+        <!--End_Body_Wrapper -->
+        <!--Start footer_Wrapper-->
+        <div class="footer_Wrapper">
+            <!--Start footer_InnerWrapper-->
+            
+<script type="text/javascript">
+
+    function ShareOnFacebook() {
+
+        window.open("http://www.facebook.com/sharer/sharer.php?u=http://punjabtourism.gov.in");
+    }
+    function ShareOnTwitter() {
+        window.open("https://twitter.com/intent/tweet?original_referer=http://punjabtourism.gov.in&url=http://punjabtourism.gov.in");
+    }
+    function ShareOnlinkedIn() {
+        window.open("http://in.linkedin.com/in/punjabtourism");
+    }
+   
+
+</script>
+<div class="right_Facebook_link">
+    <div style="float: right; padding: 0px; margin: -20px 0px 0px 0px;">
+        <a title="Click to go back to previous page" style="color: #0880c5; font-family: &#39;latobold_italic&#39;; text-decoration: underline;" href="javascript:history.back();">BACK</a></div>
+    <a href="http://www.punjabtourism.gov.in/Destinations.aspx#" onclick="return ShareOnFacebook();">
+        <img src="./PunjabTourism   Destination_files/facebook.png" alt="" width="32" height="32" border="0"></a>
+    <a href="http://www.punjabtourism.gov.in/Destinations.aspx#" onclick="return ShareOnTwitter();">
+        <img src="./PunjabTourism   Destination_files/Twitter_icon.png" alt="" width="32" height="32" border="0" style="padding-left: 5px;"></a>
+    <a href="http://www.punjabtourism.gov.in/Destinations.aspx#" onclick="return ShareOnlinkedIn();">
+        <img src="./PunjabTourism   Destination_files/linkedIn_icon.png" alt="" width="32" height="32" border="0" style="padding-left: 5px;">
+    </a>
+    
+</div>
+<div class="footer_InnerWrapper">
+    <!--Start footer_topDiv-->
+    <div class="footer_topDiv">
+        <!--Start footer_leftTopCurve-->
+        <div class="footer_leftTopCurve">
+            <img src="./PunjabTourism   Destination_files/footer_leftTop_curve.gif" width="8" height="7" alt=""></div>
+        <!--End footer_leftTopCurve-->
+        <!--Start footer_TopCenterDiv-->
+        <div class="footer_TopCenterDiv">
+            <img src="./PunjabTourism   Destination_files/clr.gif" width="1" height="7" alt=""></div>
+        <!--End footer_TopCenterDiv-->
+        <!--Start footer_TopRightCurve-->
+        <div class="footer_TopRightCurve">
+            <img src="./PunjabTourism   Destination_files/footer_rightTop_curve.gif" width="8" height="7" alt=""></div>
+        <!--End footer_TopRightCurve-->
+    </div>
+    <!--End footer_topDiv-->
+    <!--Start footer_middleDiv-->
+    <div class="footer_middleDiv">
+        <!--Start footerMenu -->
+        
+        <!--End footer_hrLineDiv-->
+        <!--Start footer_Copyright_Div-->
+        <div class="footer_Copyright_Div">
+            <h6>
+                © Copyright 2012 and 2013 , All rights reserved &nbsp;|&nbsp; Punjab Tourism</h6>
+        </div>
+        <!--End footer_Copyright_Div-->
+    </div>
+    <!--End footer_middleDiv-->
+    <!--Start footer_bottomDiv-->
+    <div class="footer_bottomDiv">
+        <!--Start footer_bottomLeftCurve-->
+        <div class="footer_bottomLeftCurve">
+            <img src="./PunjabTourism   Destination_files/footer_leftBottom_curve.gif" width="8" height="7" alt="">
+        </div>
+        <!--End footer_bottomLeftCurve-->
+        <!--Start footer_BottomCenterDiv-->
+        <div class="footer_BottomCenterDiv">
+            <img src="./PunjabTourism   Destination_files/clr.gif" width="1" height="7" alt="">
+        </div>
+        <!--End footer_BottomCenterDiv-->
+        <!--Start footer_bottomRightCurve-->
+        <div class="footer_bottomRightCurve">
+            <img src="./PunjabTourism   Destination_files/footer_rightBottom_curve.gif" width="8" height="7" alt=""></div>
+        <!--End footer_bottomRightCurve-->
+    </div>
+    <!--End footer_bottomDiv-->
+</div>
+<script type="text/javascript">
+    //******************GOOGLE ANALYTICS******************
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-35081296-1']);
+    _gaq.push(['_setDomainName', 'xcription.com']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    //*****************************************************
+</script>
+
+            <!--End footer_InnerWrapper-->
+        </div>
+        <!--End footer_Wrapper-->
+    </div>
+    <!--End Container --><div id="goog-gt-tt" class="skiptranslate" dir="ltr"><div style="padding: 8px;"><div><div class="logo"><img src="./PunjabTourism   Destination_files/translate-32.png" width="20" height="20"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">Original text</h1></div><div class="middle" style="padding: 8px;"><div class="original-text"></div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">Contribute a better translation</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none;"></div></div>
+
+
+</body></html>

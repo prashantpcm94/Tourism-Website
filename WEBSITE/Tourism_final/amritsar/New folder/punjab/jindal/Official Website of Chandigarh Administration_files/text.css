@@ -1,0 +1,503 @@
+/* MAIN BODY */
+body
+ {
+ 	margin:0px;
+	padding:0px;
+	background-color:#FFFFFF;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+ }
+a .download_link{
+	color:#03F;
+}
+
+/*............................FONTS..................................*/
+@font-face
+{
+	font-family: hindi;
+	src: url('http://chandigarh.gov.in/fonts/hindi.ttf')
+}
+.hindi
+{
+	font-family: hindi;
+}
+
+@font-face
+{
+	font-family: punjabi;
+	src: url('http://chandigarh.gov.in/fonts/punjabi.ttf')
+}
+.punjabi
+{
+	font-family: punjabi;
+}
+ 
+/*.........................BACKGROUND................................*/
+.right_main_bg {background-image:  url("../graphics/chdadmin_img_05.jpg"); background-repeat:repeat-x; }
+.left_main_bg {background-image:  url("../graphics/chdadmin_img_01.jpg"); background-repeat:repeat-x; }
+.left_shadow_bg {background-image:  url("../graphics/chdadmin_img_38.gif"); background-repeat:repeat-y; }
+.red_mid_bg { background-image:  url("../graphics/chdadmin_img_18.gif"); background-repeat:repeat-y; }
+.mid_divider_bg { background-image:  url("../graphics/chdadmin_iimg_42.gif"); background-repeat:repeat-y; }
+.mid_divider_bg2 { background-image:  url("../graphics/chdadmin_img_49.gif"); background-repeat:repeat-y; }
+.grey_line { background-image:  url("../graphics/chdadmin_img_86.gif"); background-repeat:repeat-x; }
+.grey_bg { background-image:  url("../graphics/chdadmin_img_120.gif"); background-repeat:repeat-y; }
+.top_gov_img { background-image:  url("../graphics/chdadmin_img_115.gif"); background-repeat:no-repeat; }
+.bottom_gov_img { background-image:  url("../graphics/chdadmin_img_134.gif"); background-repeat:no-repeat; }
+.bottom_moreabout_img {background-image:url("../graphics/chdadmin_img_133.gif"); background-repeat:no-repeat;}
+.top_moreabout_img {background-image:url("../graphics/chdadmin_img_78.gif"); background-repeat:no-repeat;}
+.about_top_shadow {background-image:url("../graphics/chdadmin_img_88.gif"); background-repeat:no-repeat;}
+.about_bottom_shadow {background-image:url("../graphics/chdadmin_img_105.gif"); background-repeat:no-repeat;}
+.about_divider_shadow {background-image:url("../graphics/chdadmin_img_89.gif"); background-repeat:no-repeat;}
+.top_side_bg {background-image:url("../graphics/chdadmin_img_25.gif"); background-repeat:no-repeat;}
+.bottom_side_bg {background-image:url("../graphics/chdadmin_img_62.gif"); background-repeat:no-repeat;}
+.mid_topshadow_bg {background-image:url("../graphics/chdadmin_img_27.gif"); background-repeat:no-repeat;}
+.mid_bottomshadow_bg {background-image:url("../graphics/chdadmin_img_63.gif"); background-repeat:no-repeat;}
+.right_top_shadow {background-image:url("../graphics/chdadmin_img_31.gif"); background-repeat:no-repeat;}
+.right_bottom_shadow {background-image:url("../graphics/chdadmin_img_64.gif"); background-repeat:no-repeat;}
+
+.orange_top_bg {background-image:url("../graphics/chdadmin_img_09.gif"); background-repeat:no-repeat;}
+.orange_bottom_bg {background-image:url("../graphics/chdadmin_img_13.gif"); background-repeat:no-repeat;}
+
+.rt_bg { background-color : #35AFFC; }
+
+/*............................ INDEX-PAGE ...................................*/
+
+.red_top_bg {background-image:url("../graphics/chdadmin_img_07.gif"); background-repeat:no-repeat;}
+.red_bottom_bg {background-image:url("../graphics/chdadmin_img_21.gif"); background-repeat:no-repeat;}
+
+.blue_left_bg {background-image:url("../graphics/bluecorner_leftbg.gif"); background-repeat:no-repeat;}
+.blue_right_bg {background-image:url("../graphics/bluecorner_rightbg.gif"); background-repeat:no-repeat;}
+.blue_mid_bg {background-color: #61A9E5;}
+
+.brown_left_bg {background-image:url("../graphics/ltbrowncorner_leftbg.gif"); background-repeat:no-repeat;}
+.brown_right_bg {background-image:url("../graphics/ltbrowncorner_rightbg.gif"); background-repeat:no-repeat;}
+.brown_mid_bg {background-color: #E5B261;}
+
+.pink_left_bg {background-image:url("../graphics/pinkcorner_leftbg.gif"); background-repeat:no-repeat;}
+.pink_right_bg {background-image:url("../graphics/pinkcorner_rightbg.gif"); background-repeat:no-repeat;}
+.pink_mid_bg {background-color: #E561BE;}
+
+.grey_left_bg {background-image:url("../graphics/greycorner_leftbg.gif"); background-repeat:no-repeat;}
+.grey_right_bg {background-image:url("../graphics/greycorner_rightbg.gif"); background-repeat:no-repeat;}
+.grey_mid_bg {background-color: #C8C8C8;}
+
+.dblue_left_bg {background-image:url("../graphics/knowchd_left_bg.gif"); background-repeat:no-repeat;}
+.dblue_right_bg {background-image:url("../graphics/knowchd_right_bg.gif"); background-repeat:no-repeat;}
+.dblue_mid_bg {background-color: #0E5D6A;}
+
+.dpink_left_bg {background-image:url("../graphics/citizen_left_bg.gif"); background-repeat:no-repeat;}
+.dpink_right_bg {background-image:url("../graphics/citizen_right_bg.gif"); background-repeat:no-repeat;}
+.dpink_mid_bg {background-color: #91176e;}
+
+.org_left_bg {background-image:url("../graphics/browncorner_leftbg.gif"); background-repeat:no-repeat;}
+.org_right_bg {background-image:url("../graphics/browncorner_rightbg.gif"); background-repeat:no-repeat;}
+.org_mid_bg {background-color: #E17c1b;}
+
+.green_left_bg {background-image:url("../graphics/green_left_bg.gif"); background-repeat:no-repeat;}
+.green_right_bg {background-image:url("../graphics/green_right_bg.gif"); background-repeat:no-repeat;}
+.green_mid_bg {background-color: #4b610c;}
+
+
+
+
+/*............................ END OF INDEX-PAGE ...................................*/
+
+.header_img1 {background-image:url("../graphics/chdadmin_img_02.jpg"); background-repeat:no-repeat;}
+.header_img2 {background-image:url("../graphics/chdadmin_img_03.jpg"); background-repeat:no-repeat;}
+.header_img3 {background-image:url("../graphics/chdadmin_img_04.jpg"); background-repeat:no-repeat;}
+
+/*........................TEXT FORMATTING............................*/
+.text { font-size: 12px; color: #656565; line-height: 14px; text-align: left; }
+.inner_text 
+ {
+	font-size: 13px;
+	color: #333333;
+	line-height: 17px;
+	text-align: justify;
+ }
+ 
+ .tab_heading 
+ { 
+ 	font-size: 14px;
+	font-weight:bold; 
+	color: #914E00; 
+	line-height: 20px;
+ }
+ 
+  .tab_heading1 
+ { 
+ 	font-size: 14px;
+	font-weight:bold; 
+	color: #61A9E5; 
+	line-height: 20px;
+ }
+ 
+ .tab_text 
+ { 
+ 	font-size: 13px; 
+	color: #333333; 
+	line-height: 17px; 
+ }
+ 
+ .tab_text_rep 
+ { 
+ 	font-size: 12px; 
+	color: #333333; 
+	line-height: 17px; 
+ }
+
+.redbox_text { font-size: 12px; color: #FFF; line-height: 16px; text-align: left; padding-top:12px; }
+.press_text { font-size: 13px; color: #FFF; line-height: 15px; text-align: left; padding-top:0px; }
+
+a.press_text:hover { font-size: 13px; color: #FFF; line-height: 15px; text-align: left; padding-top:0px; text-decoration: underline; }
+
+ 
+.redbox_heading
+ { 
+ 	font-family: Trebuchet MS, Arial, Verdana, Helvetica, sans-serif;  
+	font-size: 23px; 
+	color: #FFF; 
+	line-height: 27px; 
+	font-weight: bold; 
+	padding-bottom:7px;
+ }
+.redbox_heading2
+ { 
+ 	font-family: Trebuchet MS, Arial, Verdana, Helvetica, sans-serif; 
+	font-size: 14px; 
+	line-height: 19px; 
+	font-weight: bold; 
+ }
+.about_chandigarh_heading
+ { 
+ 	font-family: Trebuchet MS, Arial, Verdana, Helvetica, sans-serif; 
+	font-size: 18px; 
+	color: #914E00;
+	line-height: 24px;
+	font-weight: bold;
+ }
+.orange_text
+ { 
+ 	font-family: Trebuchet MS, Arial, Verdana, Helvetica, sans-serif; 
+	color: #D69A55; 
+	font-size: 14px; 
+	line-height: 19px; 
+	font-weight: bold; 
+	text-decoration: none;
+ }
+a.orange_text:hover
+ { 
+ 	font-family: Trebuchet MS, Arial, Verdana, Helvetica, sans-serif; 
+ 	color: #D69A55; ;   
+ 	font-size: 14px; 
+ 	line-height: 19px;
+ 	font-weight: bold; 
+ 	text-decoration: underline; 
+ }
+ 
+ .orange_text_link
+ { 
+ 	font-family: Trebuchet MS, Arial, Verdana, Helvetica, sans-serif; 
+	color: #D69A55; 
+	font-size: 13px; 
+	line-height: 19px; 
+	font-weight: bold; 
+	text-decoration: none;
+ }
+a.orange_text_link:hover
+ { 
+ 	font-family: Trebuchet MS, Arial, Verdana, Helvetica, sans-serif; 
+ 	color: #D69A55; 
+ 	font-size: 13px; 
+ 	line-height: 19px;
+ 	font-weight: bold; 
+ 	text-decoration: underline; 
+ }
+
+ .brown_text1
+ { 
+ 	font-family: Trebuchet MS, Arial, Verdana, Helvetica, sans-serif; 
+	color: #914E00; 
+	font-size: 13px; 
+	line-height: 19px; 
+	text-decoration: none;
+ }
+a.brown_text1:hover
+ { 
+ 	font-family: Trebuchet MS, Arial, Verdana, Helvetica, sans-serif; 
+ 	color: #914E00; 
+ 	font-size: 13px; 
+ 	line-height: 19px;
+ 	text-decoration: underline; 
+ }
+ 
+.white_text 
+ { 
+ 	font-family: Trebuchet MS, Arial, Verdana, Helvetica, sans-serif; 
+	color: #FFF; 
+	font-size: 14px; 
+	line-height: 19px; 
+	font-weight: regular; 
+	text-decoration: none; 
+ }
+a.white_text:hover 
+ { 
+ 	font-family: Trebuchet MS, Arial, Verdana, Helvetica, sans-serif; 
+	color: #FFF; 
+	font-size: 14px; 
+	line-height: 19px;
+	font-weight: regular; 
+	text-decoration: underline;
+ }
+ 
+ .pnotice_text 
+ { 
+ 	font-family: Trebuchet MS, Arial, Verdana, Helvetica, sans-serif; 
+	color: #E17C1B; 
+	font-size: 13px; 
+	line-height: 19px; 
+	font-weight: regular; 
+	text-decoration: none; 
+ }
+a.pnotice_text:hover 
+ { 
+ 	font-family: Trebuchet MS, Arial, Verdana, Helvetica, sans-serif; 
+	color: #E17C1B; 
+	font-size: 13px; 
+	line-height: 19px;
+	font-weight: regular; 
+	text-decoration: underline;
+ }
+
+.search 
+ { 
+ 	font-family: Trebuchet MS, Arial, Verdana, Helvetica, sans-serif;  
+	color: #FFF; 
+	font-size: 18px;
+	line-height: 23px; 
+	font-weight: regular; 
+	padding-left: 10px;
+ }
+.email_text 
+ { 
+ 	font-size: 11px; 
+	color: #638B00; 
+	line-height: 14px; 
+	text-align: right; 
+	text-decoration: none; 
+ }
+a.email_text:hover 
+ { 
+ 	font-size: 11px; 
+	color: #638B00; 
+	line-height: 14px; 
+	text-align:right;  
+	text-decoration: underline;
+ }
+.white_heading 
+ { 
+ 	font-family: Trebuchet MS, Arial, Verdana, Helvetica, sans-serif;  
+	color: #FFF; 
+	font-size: 15px; 
+	line-height: 20px;  
+	font-weight: regular;
+ }
+.white_heading2 
+ { 
+ 	font-family: Times New Roman PS MT, Arial, Verdana, Helvetica, sans-serif;  
+	color: #FFF; 
+	font-size: 24px; 
+	line-height: 30px; 
+	font-weight: regular; 
+ }
+.dark_red_heading 
+ { 
+ 	font-family: Trebuchet MS, Arial, Verdana, Helvetica, sans-serif; 
+	color: #914E00; 
+	font-size: 15px; 
+	line-height: 20px;
+	font-weight: regular; 
+ }
+.dark_red_heading2 
+ { 
+ 	font-family: Trebuchet MS, Arial, Verdana, Helvetica, sans-serif; 
+	color: #914E00; 
+	font-size: 24px; 
+	line-height: 30px;
+	font-weight: regular; 
+	text-decoration: none;
+
+ }
+ 
+ .dark_red_heading2:hover 
+ { 
+ 	font-family: Trebuchet MS, Arial, Verdana, Helvetica, sans-serif; 
+	color: #914E00; 
+	font-size: 24px; 
+	line-height: 30px;
+	font-weight: regular; 
+	text-decoration: none; 
+ }
+
+ .dark_red_heading3 
+ { 
+ 	font-family: Trebuchet MS, Arial, Verdana, Helvetica, sans-serif; 
+	color: #914E00; 
+	font-size: 20px; 
+	line-height: 20px;
+	font-weight: regular; 
+ }
+ 
+ 
+.white_heading3 
+ { 
+ 	font-family: Times New Roman PS MT , Arial, Verdana, Helvetica, sans-serif; 
+	color: #FFF; 
+	font-size: 22px; 
+	line-height: 28px; 
+	font-weight:regular; 
+	text-decoration: none;
+ }
+a.white_heading3:hover 
+ { 
+ 	font-family: Times New Roman PS MT , Arial, Verdana, Helvetica, sans-serif; 
+	color: #FFF; 
+	font-size: 22px; 
+	line-height: 28px; 
+	font-weight:regular; 
+	text-decoration: underline;
+ }
+/*...................... VARIOUS LINKS........................... */
+.read_more { font-size:12px; color:#C16700;	line-height:15px; text-decoration: none; }
+a.read_more:hover{ font-size: 12px;	color:#C16700;	line-height:15px; text-decoration:underline; }
+.link2 { font-size:11px; color:#FF2121;	line-height:15px; text-decoration: underline; }
+a.link2:hover{	font-size: 11px; color:#FF2121;	line-height:15px; text-decoration:none; }
+/*................................. Footer.......................................... */
+.footer_nav { font-size: 11px; color: #C16700; line-height: 14px; text-align: center; text-decoration: none; }
+a.footer_nav:hover { font-size: 11px; color: #C16700; line-height: 14px; text-align: center; text-decoration: underline; }
+.footer_text { font-size: 12px; color: #909090; line-height: 20px; worg-spacing: 3px; text-decoration: none; }
+/*................................. Miscell.......................................... */
+.grey_slash { font-size: 11px; color: #C2C2C2; }
+.orange_bar { background-color: #E17C1B; }
+.bottom_nav_divider { font-size: 11px; color: #C16700; }
+.header_color { background-color: #F0E5AB; }
+.ribbon_image { margin-right: 12px; margin-bottom: 12px; border: 1px solid #6D2500; }
+.adminfooter_color { background-color: #61A9E5; }
+.infofooter_color { background-color: #E5B261; }
+.citizenfooter_color { background-color: #91176e; }
+.departfooter_color { background-color: #E661BE; }
+.e-gover_color { background-color: #C8C8C8; }
+.greenfooter_color { background-color: #4b610c; }
+.orgfooter_color { background-color: #e17c1b; }
+
+
+.border_bg { background-color: #F8F8F8; border-left: 1px solid #C4C4C4; border-right: 1px solid #C4C4C4; }
+
+/*................................. Form Elements.......................................... */
+
+.tin_rep_selectbox 
+ { 
+ 	font-family: Arial, Helvetica, sans-serif; 
+	height: 18px; 
+	width: 110px; 
+	border: 1px solid #D6D2C7;	
+	font-size: 11px; 
+	line-height: 22px; 	
+	color: #00006A;	
+	word-spacing: 1px; 
+	background-color: #FFFFFF;
+ }
+
+.selectbox 
+ { 
+ 	font-family: Arial, Helvetica, sans-serif; 
+	height: 17px; 
+	width: 200px; 
+	border: 1px solid #D6D2C7;	
+	font-size: 11px; 
+	line-height: 22px; 	
+	color: #00006A;	
+	word-spacing: 1px; 
+	background-color: #FFFFFF;
+ }
+.textfield { border: #666666 1px solid; font-size :14px; color:#000; width: 125px!important; width:120px; height:21px; background:#FFFFFF; }
+
+
+
+a
+ { 
+ 	font-family: Trebuchet MS, Arial, Verdana, Helvetica, sans-serif; 
+	color: #000000; 
+	font-size: 13px; 
+	line-height: 19px; 
+	 
+	text-decoration: none;
+ }
+ 
+ .adm_stru_nm
+  {
+    font-size: 13px; 
+	color: #990000;  
+  }
+  
+.adm_stru_text 
+ { 
+ 	font-size: 13px; 
+	color: #606060; 
+	line-height: 17px; 
+ }
+ 
+
+ .adm_stru_dep 
+ { 
+ 	font-size: 13px; 
+	color: #1a5a8a; 
+	line-height: 17px;
+	font-weight:bold; 
+ }
+ 
+.adm_stru_dep1
+ { 
+ 	font-size: 13px; 
+	color: #1a5a8a; 
+	line-height: 17px;
+	padding-left: 24px;
+
+ }
+ 
+ .owin_text
+ { 
+ 	font-family: Trebuchet MS, Arial, Verdana, Helvetica, sans-serif; 
+	color: #800000; 
+	font-size: 13px; 
+	line-height: 19px; 
+	font-weight: bold; 
+	text-decoration: none;
+ }
+a.owin_text:hover
+ { 
+ 	font-family: Trebuchet MS, Arial, Verdana, Helvetica, sans-serif; 
+ 	color: #800000; 
+ 	font-size: 13px; 
+ 	line-height: 19px;
+ 	font-weight: bold; 
+ 	text-decoration: underline; 
+ }
+ 
+ .visitor_text
+ { 
+ 	font-family: Trebuchet MS, Arial, Verdana, Helvetica, sans-serif; 
+	color: #1a5a8a; 
+	font-size: 14px; 
+	line-height: 19px; 
+	font-weight: bold; 
+	text-decoration: none;
+ }
+ 
+ .blue_text1
+ { 
+ 	font-family: Trebuchet MS, Arial, Verdana, Helvetica, sans-serif; 
+	color: #0E5D6A; 
+	font-size: 13px; 
+	line-height: 19px; 
+	text-decoration: none;
+ }

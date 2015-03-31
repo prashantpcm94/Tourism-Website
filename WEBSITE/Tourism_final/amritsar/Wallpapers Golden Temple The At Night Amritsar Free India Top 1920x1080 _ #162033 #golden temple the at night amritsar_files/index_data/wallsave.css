@@ -1,0 +1,172 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font: 11px "lucida grande", tahoma, verdana, arial, sans-serif;
+    background: #ebebeb;
+    overflow-x: hidden;
+}
+
+.white_content {
+    top: 25%;
+    left: 35%;
+    width: 599px;
+    min-height: 100px;
+    padding: 5px;
+    z-index: 1002;
+    border: 1px solid #999;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    box-shadow: 0 8px 5px -6px #616161;
+    background: #fff url(../images/bglight.png) repeat-x bottom;
+}
+
+.white_content .download {
+    width: 304px;
+    margin-left: 140px;
+}
+
+.white_content .imageandroid {
+    padding: 3px;
+    width: 200px;
+    height: 133px;
+    background: url(../images/mega.jpg) no-repeat;
+    margin: 15px 5px 5px 70px;
+    float: left;
+}
+
+.white_content .download a {
+    background-color: #7fbf4d;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7fbf4d), color-stop(100%, #63a62f));
+    background-image: -webkit-linear-gradient(top, #7fbf4d, #63a62f);
+    background-image: -moz-linear-gradient(top, #7fbf4d, #63a62f);
+    background-image: -ms-linear-gradient(top, #7fbf4d, #63a62f);
+    background-image: -o-linear-gradient(top, #7fbf4d, #63a62f);
+    background-image: linear-gradient(top, #7fbf4d, #63a62f);
+    border: 1px solid #63a62f;
+    border-bottom: 1px solid #5b992b;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 1px 0 0 #96ca6d;
+    -moz-box-shadow: inset 0 1px 0 0 #96ca6d;
+    box-shadow: inset 0 1px 0 0 #96ca6d;
+    color: #fff;
+    font: bold 11px "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    padding: 10px 0;
+    text-align: center;
+    text-shadow: 0 -1px 0 #4c9021;
+    display: block;
+    font-size: 28px;
+    height: 52px;
+    line-height: 52px;
+    margin: 5px auto 10px;
+    width: 304px;
+    text-decoration: none;
+}
+
+.white_content .download a:hover {
+    background-color: #76b347;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #76b347), color-stop(100%, #5e9e2e));
+    background-image: -webkit-linear-gradient(top, #76b347, #5e9e2e);
+    background-image: -moz-linear-gradient(top, #76b347, #5e9e2e);
+    background-image: -ms-linear-gradient(top, #76b347, #5e9e2e);
+    background-image: -o-linear-gradient(top, #76b347, #5e9e2e);
+    background-image: linear-gradient(top, #76b347, #5e9e2e);
+    -webkit-box-shadow: inset 0 1px 0 0 #8dbf67;
+    -moz-box-shadow: inset 0 1px 0 0 #8dbf67;
+    box-shadow: inset 0 1px 0 0 #8dbf67;
+    cursor: pointer;
+}
+
+.white_content .download a:active {
+    border: 1px solid #5b992b;
+    border-bottom: 1px solid #538c27;
+    -webkit-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;
+    -moz-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;
+    box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;
+}
+
+.white_content .imagelight {
+    padding: 3px;
+    width: 207px;
+    height: 171px;
+    background: url(../images/monitorlight.png) no-repeat;
+    margin: 15px 5px 5px 70px;
+    float: left;
+}
+
+.white_content .imagelight .screenlight img {
+    width: 172px;
+    height: 99px;
+}
+
+.white_content .imagelight img {
+    margin: 4px 0 0 20px;
+    width: 172px;
+    height: 98px;
+}
+
+.white_content .itemslight {
+    margin: 0;
+    width: 250px;
+    float: left;
+}
+
+.white_content p.infowall {
+    font-size: 15px;
+    font-weight: bold;
+    color: #666;
+    text-align: left;
+    line-height: 19px;
+    background: none;
+    margin: 0;
+}
+
+.white_content .itemslight p.items {
+    font-size: 16px;
+    color: green;
+    font-weight: normal;
+    padding-left: 0;
+    margin: 5px 0;
+}
+
+.white_content .itemslight p.items span {
+    font-size: 24px;
+}
+
+.white_content h2 {
+    color: #0067bf;
+    background: #fff url(../images/wallsavelogolight.jpg) no-repeat 8px 7px;
+    border: 1px solid #e6edf2;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 21px;
+    font-weight: bold;
+    padding: 0 10px 0 129px;
+    font-family: arial;
+}
+
+.white_content p {
+    font-size: 12px;
+    color: #666;
+    font-family: arial;
+}
+
+#controlusuarios {background:url(../images/controlusuarios.jpg) no-repeat; width:556px; height:175px; margin:12px;}
+#controlusuarios h5 {font-size:11px; font-weight:bold; color:#333;}
+#controlusuarios #txt1 {width:270px;}
+#controlusuarios #txt1 p {font-size:11px; line-height:14px; margin-top:2px;}
+#controlusuarios #txt2 {width:270px; margin-top:47px;}
+#controlusuarios #txt2 p{text-align:center;}
+#controlusuarios #wrap-control {padding:15px;}

@@ -1,0 +1,2 @@
+// JavaScript Document
+document.write('<script type="text/javascript">google_ad_client = "pub-5696665563041105";google_ad_width = 200;google_ad_height = 200;google_ad_format = "200x200_as";google_ad_type = "image";google_ad_channel = "2677442071";google_color_border = "B0DBFE";google_color_bg = "FFFFFF";google_color_link = "000099";google_color_text = "666666";google_color_url = "008000";</script><script type="text/javascript"  src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>');

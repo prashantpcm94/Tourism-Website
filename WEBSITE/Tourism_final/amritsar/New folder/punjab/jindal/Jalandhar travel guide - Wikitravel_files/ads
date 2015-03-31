@@ -1,0 +1,31 @@
+{
+
+var google_ads = new Array();
+var google_ad;
+var google_radlinks = new Array();
+var google_radlink;
+var google_info = new Object();
+google_ad = {}; 
+google_ad.n = 1; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://www.googleadservices.com/pagead/aclk?sa=L&amp;ai=CDFabG4GiU6XsKIKcuASzpYKADZTI4pwG9LO4um_AjbcBEAEgl5WsE1Dt-tPE______8BYOXS54P8KaAB3N_85gPIAQGpApAiglry7FE-qAMBqgSDAU_QVci0HACbTDPYHPV4zWXSugoJjcZB82hCfTlBcZ_A3IO9ape8PtyxiwpVYT5FSJRt5nmfvnDQA_AnZbJzbAwKBGQaywqVmZoulvgfN8IYx54a1koGOuo1W6HH9yMQEFBpvAb4lx3oiQsfM5MyWWDQHAyOpfoA5eU6olxBr7P5rmm3iAYBgAeMoIMZ&amp;num=1&amp;cid=5Ghl7t_0IUKLlXLUKiKDrSQs&amp;sig=AOD64_0N3_DadfRdrxcMBZbUnUsG1mx4OA&amp;client=ca-ib_travel_sede_3&amp;adurl=http://www.holidayiq.com/int-holidaybooking.php%3FDestination_id%3D1594%26channel%3DSEM_IGDN%26ts_code%3D76f41"; 
+google_ad.visible_url = "holidayiq.com/Thailand_Tour_Package"; 
+google_ad.log_info = "BfLa_G4GiU6XsKIKcuASzpYKADQD0s7i6bwAAEAE4AcgBAagTgAE";
+google_ad.activeview_js_immediate_enabled = "true";
+google_ad.line1 = "Thailand Tour Packages"; 
+google_ad.line2 = "Get Best Deals on Holiday Packages!"; 
+google_ad.line3 = "Book Perfect Thailand Tour Today"; 
+google_ad.regionname = ""; 
+google_ads[0] = google_ad; 
+google_info.feedback_url = "https://www.google.com/url?ct\x3dabg\x26q\x3dhttps://www.google.com/adsense/support/bin/request.py%3Fcontact%3Dabg_afc%26url%3Dhttp://wikitravel.org/en/Jalandhar%26gl%3DIN%26hl%3Den%26client%3Dca-ib_travel_sede_3%26hideleadgen%3D1%26ai0%3DCDFabG4GiU6XsKIKcuASzpYKADZTI4pwG9LO4um_AjbcBEAEgl5WsE1Dt-tPE______8BYOXS54P8KaAB3N_85gPIAQGpApAiglry7FE-qAMBqgSDAU_QVci0HACbTDPYHPV4zWXSugoJjcZB82hCfTlBcZ_A3IO9ape8PtyxiwpVYT5FSJRt5nmfvnDQA_AnZbJzbAwKBGQaywqVmZoulvgfN8IYx54a1koGOuo1W6HH9yMQEFBpvAb4lx3oiQsfM5MyWWDQHAyOpfoA5eU6olxBr7P5rmm3iAYBgAeMoIMZ\x26usg\x3dAFQjCNEp7MvWILos2zZSQrTORMdvwnbiOg";
+var google_attribution_text = "AdChoices";
+var google_is_rtl = false;
+if (window.google_ad_request_done) {
+google_ad_request_done(google_ads);
+}
+if (window.google_radlink_request_done) {
+google_radlink_request_done(google_radlinks);
+}
+}

@@ -1,0 +1,31 @@
+{
+
+var google_ads = new Array();
+var google_ad;
+var google_radlinks = new Array();
+var google_radlink;
+var google_info = new Object();
+google_ad = {}; 
+google_ad.n = 1; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://googleads.g.doubleclick.net/aclk?sa=L&amp;ai=CLp2BB4GiU5GDKc6YuATStoCoC4CI9vIE4Mu9nb4BwI23ARABIJeVrBNQ-8_Qm_7_____AWDl0ueD_CnIAQGpApAiglry7FE-qAMBqgSBAU_QCNtJOjzlLFoj6RTw0Lq70vu-fTCMpJt0E9GJK2NeagssjFSh64BkPWzPAqtRrM9Fhf80bqwMhSj2PxQ88saNGXpJsrZKPVOBe-xsPo0L43s6597p39XkwtJxV9itZFslVBOsESUrjzZW7yjgT6EFVOgEiyghtKkJ84t_d7CRfoAHsNWKLQ&amp;num=1&amp;sig=AOD64_15ckyhp_diWHqoa2mnz9sIWDy4kg&amp;client=ca-ib_travel_sede_3&amp;adurl=http://www.ranatravelschandigarh.com"; 
+google_ad.visible_url = "www.ranatravelschandigarh.com"; 
+google_ad.log_info = "BH0RgB4GiU5GDKc6YuATStoCoCwDgy72dvgEAABABOAHIAQGoE4AB";
+google_ad.activeview_js_immediate_enabled = "true";
+google_ad.line1 = "Himachal Tour Packages"; 
+google_ad.line2 = "Shimla Manali Dharamshala Dalhousie"; 
+google_ad.line3 = "Cheap \x26amp; Best Discount 9041412141"; 
+google_ad.regionname = ""; 
+google_ads[0] = google_ad; 
+google_info.feedback_url = "https://www.google.com/url?ct\x3dabg\x26q\x3dhttps://www.google.com/adsense/support/bin/request.py%3Fcontact%3Dabg_afc%26url%3Dhttp://wikitravel.org/en/Chandigarh%26gl%3DIN%26hl%3Den%26client%3Dca-ib_travel_sede_3%26hideleadgen%3D1%26ai0%3DCLp2BB4GiU5GDKc6YuATStoCoC4CI9vIE4Mu9nb4BwI23ARABIJeVrBNQ-8_Qm_7_____AWDl0ueD_CnIAQGpApAiglry7FE-qAMBqgSBAU_QCNtJOjzlLFoj6RTw0Lq70vu-fTCMpJt0E9GJK2NeagssjFSh64BkPWzPAqtRrM9Fhf80bqwMhSj2PxQ88saNGXpJsrZKPVOBe-xsPo0L43s6597p39XkwtJxV9itZFslVBOsESUrjzZW7yjgT6EFVOgEiyghtKkJ84t_d7CRfoAHsNWKLQ\x26usg\x3dAFQjCNHAcZRexzPO4eOwR8Tpb4z5mZCDNQ";
+var google_attribution_text = "AdChoices";
+var google_is_rtl = false;
+if (window.google_ad_request_done) {
+google_ad_request_done(google_ads);
+}
+if (window.google_radlink_request_done) {
+google_radlink_request_done(google_radlinks);
+}
+}
